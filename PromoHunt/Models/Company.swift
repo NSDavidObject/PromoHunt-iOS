@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct Company: ObjectMapping {
+    let name: String
+    init?(json: [String : AnyObject]) {
+        guard let name = json["name"] as? String else { return nil }
+        self.name = name
+    }
+}

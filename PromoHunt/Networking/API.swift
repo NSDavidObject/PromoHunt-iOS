@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+enum ApiVersion: Int {
+    case one = 1
+}
+
+struct CompaniesFetchRequest: ModelArrayFetchRequest {
+    typealias Model = Company
+    
+    static var path: String = "companies.json"
+    static var version: ApiVersion = .one
+    static var parameters: [String : AnyObject] = [:]
+}

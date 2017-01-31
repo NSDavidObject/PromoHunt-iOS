@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct Secrets {
+    static let APIKey = "some-ios-secret-key"
+}

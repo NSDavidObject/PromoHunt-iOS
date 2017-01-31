@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol ObjectMapping {
+    init?(json: [String : AnyObject])
+}

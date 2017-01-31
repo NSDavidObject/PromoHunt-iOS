@@ -14,6 +14,24 @@
 		0C4F4DE11E3F07E50075085E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C4F4DDF1E3F07E50075085E /* LaunchScreen.storyboard */; };
 		0C4F4DEC1E3F07E50075085E /* PromoHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F4DEB1E3F07E50075085E /* PromoHuntTests.swift */; };
 		0C4F4DF71E3F07E50075085E /* PromoHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4F4DF61E3F07E50075085E /* PromoHuntUITests.swift */; };
+		0CB8865F1E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */; };
+		0CB886601E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */; };
+		0CB886621E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */; };
+		0CB886631E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */; };
+		0CB886671E3F0F9400B94685 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886661E3F0F9400B94685 /* API.swift */; };
+		0CB886681E3F0F9400B94685 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886661E3F0F9400B94685 /* API.swift */; };
+		0CB8866A1E3F0FAE00B94685 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886691E3F0FAE00B94685 /* Secrets.swift */; };
+		0CB8866B1E3F0FAE00B94685 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886691E3F0FAE00B94685 /* Secrets.swift */; };
+		0CB8866E1E3F17F100B94685 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8866D1E3F17F100B94685 /* Model.swift */; };
+		0CB8866F1E3F17F100B94685 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8866D1E3F17F100B94685 /* Model.swift */; };
+		0CB886711E3F386A00B94685 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886701E3F386A00B94685 /* Company.swift */; };
+		0CB886721E3F386A00B94685 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886701E3F386A00B94685 /* Company.swift */; };
+		0CB886741E3F3D9300B94685 /* APIFetchRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886731E3F3D9300B94685 /* APIFetchRequests.swift */; };
+		0CB886751E3F3D9300B94685 /* APIFetchRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886731E3F3D9300B94685 /* APIFetchRequests.swift */; };
+		0CB886771E3F3E5500B94685 /* APIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886761E3F3E5500B94685 /* APIHelpers.swift */; };
+		0CB886781E3F3E5500B94685 /* APIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886761E3F3E5500B94685 /* APIHelpers.swift */; };
+		80FB70E8689B187047F595B9 /* Pods_PromoHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0394FD180E63AD4CA7DEB27 /* Pods_PromoHunt.framework */; };
+		BD5076834142A02F89B474D3 /* Pods_PromoHuntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318C2658CB69E2872AACEE91 /* Pods_PromoHuntTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +65,20 @@
 		0C4F4DF21E3F07E50075085E /* PromoHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PromoHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C4F4DF61E3F07E50075085E /* PromoHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoHuntUITests.swift; sourceTree = "<group>"; };
 		0C4F4DF81E3F07E50075085E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HTTPManager.swift .swift"; path = "Networking/HTTPManager.swift .swift"; sourceTree = "<group>"; };
+		0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HTTPManager+Alamofire.swift"; path = "Networking/HTTPManager+Alamofire.swift"; sourceTree = "<group>"; };
+		0CB886661E3F0F9400B94685 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
+		0CB886691E3F0FAE00B94685 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		0CB8866D1E3F17F100B94685 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0CB886701E3F386A00B94685 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Models/Company.swift; sourceTree = "<group>"; };
+		0CB886731E3F3D9300B94685 /* APIFetchRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetchRequests.swift; path = API/APIFetchRequests.swift; sourceTree = "<group>"; };
+		0CB886761E3F3E5500B94685 /* APIHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelpers.swift; path = API/APIHelpers.swift; sourceTree = "<group>"; };
+		318C2658CB69E2872AACEE91 /* Pods_PromoHuntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromoHuntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E943EF0C5C271C4F426DADD /* Pods-PromoHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHunt/Pods-PromoHunt.release.xcconfig"; sourceTree = "<group>"; };
+		8D089B5901193D6E4A67257B /* Pods-PromoHuntTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHuntTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHuntTests/Pods-PromoHuntTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DB6A23E5C4744161B84EA30 /* Pods-PromoHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHunt/Pods-PromoHunt.debug.xcconfig"; sourceTree = "<group>"; };
+		BFEF774E4C75C8B1D7CC0D8E /* Pods-PromoHuntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHuntTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHuntTests/Pods-PromoHuntTests.release.xcconfig"; sourceTree = "<group>"; };
+		D0394FD180E63AD4CA7DEB27 /* Pods_PromoHunt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromoHunt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80FB70E8689B187047F595B9 /* Pods_PromoHunt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD5076834142A02F89B474D3 /* Pods_PromoHuntTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +115,8 @@
 				0C4F4DEA1E3F07E50075085E /* PromoHuntTests */,
 				0C4F4DF51E3F07E50075085E /* PromoHuntUITests */,
 				0C4F4DD41E3F07E50075085E /* Products */,
+				B6284B8E4BF238663D732A04 /* Pods */,
+				CAA5FF8C5B03841AD200EF3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +139,8 @@
 				0C4F4DDD1E3F07E50075085E /* Assets.xcassets */,
 				0C4F4DDF1E3F07E50075085E /* LaunchScreen.storyboard */,
 				0C4F4DE21E3F07E50075085E /* Info.plist */,
+				0CB8866C1E3F17E300B94685 /* Model */,
+				0CB8865D1E3F0BD500B94685 /* Networking */,
 			);
 			path = PromoHunt;
 			sourceTree = "<group>";
@@ -125,6 +163,64 @@
 			path = PromoHuntUITests;
 			sourceTree = "<group>";
 		};
+		0CB8865D1E3F0BD500B94685 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				0CB886651E3F0F8200B94685 /* API */,
+				0CB886641E3F0F7700B94685 /* HTTPManager */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		0CB886641E3F0F7700B94685 /* HTTPManager */ = {
+			isa = PBXGroup;
+			children = (
+				0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */,
+				0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */,
+			);
+			name = HTTPManager;
+			sourceTree = "<group>";
+		};
+		0CB886651E3F0F8200B94685 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0CB886661E3F0F9400B94685 /* API.swift */,
+				0CB886761E3F3E5500B94685 /* APIHelpers.swift */,
+				0CB886731E3F3D9300B94685 /* APIFetchRequests.swift */,
+				0CB886691E3F0FAE00B94685 /* Secrets.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		0CB8866C1E3F17E300B94685 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CB8866D1E3F17F100B94685 /* Model.swift */,
+				0CB886701E3F386A00B94685 /* Company.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B6284B8E4BF238663D732A04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DB6A23E5C4744161B84EA30 /* Pods-PromoHunt.debug.xcconfig */,
+				4E943EF0C5C271C4F426DADD /* Pods-PromoHunt.release.xcconfig */,
+				8D089B5901193D6E4A67257B /* Pods-PromoHuntTests.debug.xcconfig */,
+				BFEF774E4C75C8B1D7CC0D8E /* Pods-PromoHuntTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CAA5FF8C5B03841AD200EF3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0394FD180E63AD4CA7DEB27 /* Pods_PromoHunt.framework */,
+				318C2658CB69E2872AACEE91 /* Pods_PromoHuntTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C4F4DFB1E3F07E50075085E /* Build configuration list for PBXNativeTarget "PromoHunt" */;
 			buildPhases = (
+				0862DA537DB6D0758A500FE5 /* [CP] Check Pods Manifest.lock */,
 				0C4F4DCF1E3F07E50075085E /* Sources */,
 				0C4F4DD01E3F07E50075085E /* Frameworks */,
 				0C4F4DD11E3F07E50075085E /* Resources */,
+				BE20D1567A2838F6777B6E00 /* [CP] Embed Pods Frameworks */,
+				131D62A30E676D6D426131CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C4F4DFE1E3F07E50075085E /* Build configuration list for PBXNativeTarget "PromoHuntTests" */;
 			buildPhases = (
+				AA7BF00B85D00C069986DE8D /* [CP] Check Pods Manifest.lock */,
 				0C4F4DE31E3F07E50075085E /* Sources */,
 				0C4F4DE41E3F07E50075085E /* Frameworks */,
 				0C4F4DE51E3F07E50075085E /* Resources */,
+				8E12E8EB75C532FE7AE13E5D /* [CP] Embed Pods Frameworks */,
+				3A54B470F056C1110BAF5B0E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +359,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0862DA537DB6D0758A500FE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		131D62A30E676D6D426131CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PromoHunt/Pods-PromoHunt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A54B470F056C1110BAF5B0E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PromoHuntTests/Pods-PromoHuntTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E12E8EB75C532FE7AE13E5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PromoHuntTests/Pods-PromoHuntTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA7BF00B85D00C069986DE8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE20D1567A2838F6777B6E00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PromoHunt/Pods-PromoHunt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0C4F4DCF1E3F07E50075085E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB886771E3F3E5500B94685 /* APIHelpers.swift in Sources */,
+				0CB8866E1E3F17F100B94685 /* Model.swift in Sources */,
+				0CB886621E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */,
+				0CB8866A1E3F0FAE00B94685 /* Secrets.swift in Sources */,
+				0CB886741E3F3D9300B94685 /* APIFetchRequests.swift in Sources */,
+				0CB8865F1E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */,
 				0C4F4DD91E3F07E50075085E /* ViewController.swift in Sources */,
 				0C4F4DD71E3F07E50075085E /* AppDelegate.swift in Sources */,
+				0CB886671E3F0F9400B94685 /* API.swift in Sources */,
+				0CB886711E3F386A00B94685 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +475,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C4F4DEC1E3F07E50075085E /* PromoHuntTests.swift in Sources */,
+				0CB886751E3F3D9300B94685 /* APIFetchRequests.swift in Sources */,
+				0CB8866B1E3F0FAE00B94685 /* Secrets.swift in Sources */,
+				0CB886631E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */,
+				0CB886781E3F3E5500B94685 /* APIHelpers.swift in Sources */,
+				0CB8866F1E3F17F100B94685 /* Model.swift in Sources */,
+				0CB886721E3F386A00B94685 /* Company.swift in Sources */,
+				0CB886681E3F0F9400B94685 /* API.swift in Sources */,
+				0CB886601E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +624,7 @@
 		};
 		0C4F4DFC1E3F07E50075085E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB6A23E5C4744161B84EA30 /* Pods-PromoHunt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NC6PEUTA52;
@@ -426,6 +638,7 @@
 		};
 		0C4F4DFD1E3F07E50075085E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E943EF0C5C271C4F426DADD /* Pods-PromoHunt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NC6PEUTA52;
@@ -439,6 +652,7 @@
 		};
 		0C4F4DFF1E3F07E50075085E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D089B5901193D6E4A67257B /* Pods-PromoHuntTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +668,7 @@
 		};
 		0C4F4E001E3F07E50075085E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFEF774E4C75C8B1D7CC0D8E /* Pods-PromoHuntTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +729,7 @@
 				0C4F4DFD1E3F07E50075085E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C4F4DFE1E3F07E50075085E /* Build configuration list for PBXNativeTarget "PromoHuntTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +738,7 @@
 				0C4F4E001E3F07E50075085E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C4F4E011E3F07E50075085E /* Build configuration list for PBXNativeTarget "PromoHuntUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +747,7 @@
 				0C4F4E031E3F07E50075085E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

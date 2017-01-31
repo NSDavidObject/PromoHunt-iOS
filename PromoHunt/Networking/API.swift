@@ -17,5 +17,5 @@ struct CompaniesFetchRequest: ModelArrayFetchRequest {
     
     static var path: String = "companies.json"
     static var version: ApiVersion = .one
-    static var parameters: [String : AnyObject] = [:]
+    static var parameters: JSONDictionary = [:]
 }

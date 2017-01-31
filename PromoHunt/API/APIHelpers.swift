@@ -13,7 +13,7 @@ private struct Constants {
 }
 
 extension HTTPRequest {
-    static func authorizedRequest(path: String, method: HTTPMethod = .get, parameters: [String: AnyObject] = [:]) -> HTTPRequest {
+    static func authorizedRequest(path: String, method: HTTPMethod = .get, parameters: JSONDictionary = [:]) -> HTTPRequest {
         let headers = ["Authorization" : "\(Secrets.APIKey)", "Accept": "application/json"]
         let urlString = Constants.Host + path
 

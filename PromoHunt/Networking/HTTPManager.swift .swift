@@ -9,6 +9,8 @@
 import Foundation
 import Alamofire
 
+typealias JSONDictionary = [String:AnyObject]
+
 enum HTTPMethod: String {
     case options = "OPTIONS"
     case get     = "GET"
@@ -25,7 +27,7 @@ struct HTTPRequest {
     let urlString: String
     let method: HTTPMethod
     let headers: [String: String]?
-    let parameters: [String: AnyObject]?
+    let parameters: JSONDictionary?
 }
 
 struct HTTPResponse {

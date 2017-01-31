@@ -10,8 +10,14 @@ import Foundation
 
 struct Company: ObjectMapping {
     let name: String
-    init?(json: [String : AnyObject]) {
-        guard let name = json["name"] as? String else { return nil }
-        self.name = name
+    let color: String
+    let image: String
+    let promoted: Bool
+
+    init(json: JSONDictionary) throws {
+        self.name = try UnWrapRequiredValue(json["name"])
+        self.color = try UnWrapRequiredValue(json["color"])
+        self.image = try UnWrapRequiredValue(json["image"])
+        self.promoted = Bool(try UnWrapRequiredValue(json["promoted"]) as NSNumber)
     }
 }

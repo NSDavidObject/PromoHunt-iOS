@@ -14,7 +14,7 @@ protocol FetchRequest {
 
     static var path: String { get }
     static var version: ApiVersion { get }
-    static var parameters: [String : AnyObject] { get }
+    static var parameters: JSONDictionary { get }
 
     static func constructResult(json: AnyObject) -> ReturnType?
 }
@@ -25,8 +25,8 @@ protocol ModelFetchRequest: FetchRequest {
 
 extension ModelFetchRequest {
     static func constructResult(json: AnyObject) -> Model? {
-        guard let jsonDictionary = json as? [String:AnyObject] else { return nil }
-        return Model.init(json: jsonDictionary)
+        guard let jsonDictionary = json as? JSONDictionary else { return nil }
+        return try? Model.init(json: jsonDictionary)
     }
 }
 
@@ -36,8 +36,8 @@ protocol ModelArrayFetchRequest: FetchRequest {
 
 extension ModelArrayFetchRequest {
     static func constructResult(json: AnyObject) -> [Model]? {
-        guard let jsonArray = json as? [[String:AnyObject]] else { return nil }
-        return jsonArray.flatMap({ Model.init(json: $0) })
+        guard let jsonArray = json as? [JSONDictionary] else { return nil }
+        return jsonArray.flatMap({ try? Model.init(json: $0) })
     }
 }
 
@@ -45,9 +45,10 @@ extension FetchRequest {
     static var versionedPath: String {
         return "v\(version.rawValue.description)/\(path)"
     }
-    static func request(completion: @escaping ((ReturnType?) -> Void)) {
+    static func request(with parameters: JSONDictionary = [:], completion: @escaping ((ReturnType?) -> Void)) {
         DispatchQueue.global().async {
-            let authorizedRequest = HTTPRequest.authorizedRequest(path: versionedPath, method: .get, parameters: parameters)
+            let mergedParameters = self.parameters + parameters
+            let authorizedRequest = HTTPRequest.authorizedRequest(path: versionedPath, method: .get, parameters: mergedParameters)
             HTTPManager.makeRequest(authorizedRequest) { response in
 
                 var result: ReturnType?

@@ -18,6 +18,8 @@
 		0C7BD6F11E40D814008228F2 /* ParsingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BD6EF1E40D814008228F2 /* ParsingHelpers.swift */; };
 		0C7BD6F31E40DF9C008228F2 /* DictionaryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BD6F21E40DF9C008228F2 /* DictionaryHelpers.swift */; };
 		0C7BD6F41E40DF9C008228F2 /* DictionaryHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7BD6F21E40DF9C008228F2 /* DictionaryHelpers.swift */; };
+		0C86196B1E41A1110024F70E /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86196A1E41A1110024F70E /* Promo.swift */; };
+		0C86196C1E41A1110024F70E /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C86196A1E41A1110024F70E /* Promo.swift */; };
 		0CB8865F1E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */; };
 		0CB886601E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */; };
 		0CB886621E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */; };
@@ -71,6 +73,7 @@
 		0C4F4DF81E3F07E50075085E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C7BD6EF1E40D814008228F2 /* ParsingHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ParsingHelpers.swift; path = Extensions/ParsingHelpers.swift; sourceTree = "<group>"; };
 		0C7BD6F21E40DF9C008228F2 /* DictionaryHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DictionaryHelpers.swift; path = Extensions/DictionaryHelpers.swift; sourceTree = "<group>"; };
+		0C86196A1E41A1110024F70E /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Promo.swift; path = Models/Promo.swift; sourceTree = "<group>"; };
 		0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HTTPManager.swift .swift"; path = "Networking/HTTPManager.swift .swift"; sourceTree = "<group>"; };
 		0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HTTPManager+Alamofire.swift"; path = "Networking/HTTPManager+Alamofire.swift"; sourceTree = "<group>"; };
 		0CB886661E3F0F9400B94685 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
@@ -182,6 +185,7 @@
 		0CB8865D1E3F0BD500B94685 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0CB886691E3F0FAE00B94685 /* Secrets.swift */,
 				0CB886651E3F0F8200B94685 /* API */,
 				0CB886641E3F0F7700B94685 /* HTTPManager */,
 			);
@@ -203,7 +207,6 @@
 				0CB886661E3F0F9400B94685 /* API.swift */,
 				0CB886761E3F3E5500B94685 /* APIHelpers.swift */,
 				0CB886731E3F3D9300B94685 /* APIFetchRequests.swift */,
-				0CB886691E3F0FAE00B94685 /* Secrets.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB8866D1E3F17F100B94685 /* Model.swift */,
+				0C86196A1E41A1110024F70E /* Promo.swift */,
 				0CB886701E3F386A00B94685 /* Company.swift */,
 			);
 			name = Model;
@@ -483,6 +487,7 @@
 				0C7BD6F31E40DF9C008228F2 /* DictionaryHelpers.swift in Sources */,
 				0C4F4DD71E3F07E50075085E /* AppDelegate.swift in Sources */,
 				0C7BD6F01E40D814008228F2 /* ParsingHelpers.swift in Sources */,
+				0C86196B1E41A1110024F70E /* Promo.swift in Sources */,
 				0CB886671E3F0F9400B94685 /* API.swift in Sources */,
 				0CB886711E3F386A00B94685 /* Company.swift in Sources */,
 			);
@@ -495,6 +500,7 @@
 				0C4F4DEC1E3F07E50075085E /* PromoHuntTests.swift in Sources */,
 				0CB886751E3F3D9300B94685 /* APIFetchRequests.swift in Sources */,
 				0CB8866B1E3F0FAE00B94685 /* Secrets.swift in Sources */,
+				0C86196C1E41A1110024F70E /* Promo.swift in Sources */,
 				0C7BD6F41E40DF9C008228F2 /* DictionaryHelpers.swift in Sources */,
 				0CB886631E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */,
 				0CB886781E3F3E5500B94685 /* APIHelpers.swift in Sources */,

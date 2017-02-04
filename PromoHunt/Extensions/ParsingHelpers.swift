@@ -10,6 +10,7 @@ import Foundation
 
 enum ParsingError: Error {
     case unexpectedType
+    case unexpectedValue
 }
 
 func UnWrapOptionalValue<InputType, ExpectedType>(_ input: InputType) -> ExpectedType? {

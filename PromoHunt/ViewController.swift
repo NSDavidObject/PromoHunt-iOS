@@ -14,9 +14,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        CompaniesFetchRequest.request { companies in
-            print(companies)
-        }
+//        CompaniesFetchRequest.request { companies in
+//            guard let firstCompany = companies?.first else {
+//                return
+//            }
+//            PromosFetchRequest.request(for: firstCompany, completion: { promos in
+//                Swift.debugPrint(promos ?? "no response")
+//                guard let lastPromo = promos?.last else {
+//                    return
+//                }
+//                PromoVoteRequest.request(on: lastPromo, vote: .invalid, completion: { success in
+//                    Swift.debugPrint(success ? "voted successfuly" : "vote failed")
+//                })
+//            })
+//        }
     }
 
     override func didReceiveMemoryWarning() {

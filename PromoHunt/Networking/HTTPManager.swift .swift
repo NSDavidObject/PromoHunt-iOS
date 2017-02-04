@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-typealias JSONDictionary = [String:AnyObject]
+typealias JSONDictionary = [String: AnyObject]
 
 enum HTTPMethod: String {
     case options = "OPTIONS"
@@ -38,8 +38,12 @@ struct HTTPResponse {
 
 class HTTPManager {
     class func makeRequest(_ request: HTTPRequest, withCompletion completion: @escaping (HTTPResponse) -> Void) {
-        Alamofire.request(request.urlString, method: request.alamofireMethod(), parameters: request.parameters, headers: request.headers).responseJSON { response in
-            completion(HTTPResponse(rawData: response.data, requestURL: request.urlString, result: response.result.resultFromAlamofire()))
+        DispatchQueue.global().async {
+            Alamofire.request(request.urlString, method: request.alamofireMethod(), parameters: request.parameters, headers: request.headers).responseJSON { response in
+                DispatchQueue.main.async {
+                    completion(HTTPResponse(rawData: response.data, requestURL: request.urlString, result: response.result.resultFromAlamofire()))
+                }
+            }
         }
     }
 }

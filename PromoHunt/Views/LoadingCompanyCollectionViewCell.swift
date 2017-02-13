@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 import Shimmer
 import CommonUtilities
 
@@ -26,20 +27,20 @@ class CompanyLoadingCellSpec {
 
 class LoadingCompanyCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var textPlaceholderView: ShimmerView!
+    @IBOutlet weak var shimmerView: FBShimmeringView!
+    @IBOutlet weak var shimmerContentView: View!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 30))
-        view.backgroundColor = UIColor.white.withAlphaComponent(0.1)
-
-        textPlaceholderView.contentView = view
-        textPlaceholderView.isShimmering = true
-        textPlaceholderView.shimmeringSpeed = 140
-        textPlaceholderView.shimmeringOpacity = 0.2
-        textPlaceholderView.backgroundColor = UIColor.clear
-        textPlaceholderView.proportionalCornerRadius = .circular
+        
+        shimmerView.isShimmering = true
+        shimmerView.shimmeringSpeed = 140
+        shimmerView.shimmeringOpacity = 0.2
+        shimmerView.backgroundColor = UIColor.clear
+        shimmerView.contentView = shimmerContentView
+        
+        shimmerContentView.proportionalCornerRadius = .circular
+        shimmerContentView.backgroundColor = UIColor.white.withAlphaComponent(0.1)
     }
 
     override func prepareForReuse() {

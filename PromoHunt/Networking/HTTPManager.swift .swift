@@ -8,8 +8,7 @@
 
 import Foundation
 import Alamofire
-
-typealias JSONDictionary = [String: AnyObject]
+import CommonUtilities
 
 enum HTTPMethod: String {
     case options = "OPTIONS"

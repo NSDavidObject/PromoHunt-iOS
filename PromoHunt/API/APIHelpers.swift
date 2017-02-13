@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CommonUtilities
 
 private struct Constants {
     static let Host = "https://peaceful-island-42708.herokuapp.com/api/"

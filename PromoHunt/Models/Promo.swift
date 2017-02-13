@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CommonUtilities
 
 enum Vote: Int {
     case none = 0

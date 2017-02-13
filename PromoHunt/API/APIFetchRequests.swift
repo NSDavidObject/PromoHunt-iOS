@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CommonUtilities
 
 // MARK: - Request
 protocol Request {

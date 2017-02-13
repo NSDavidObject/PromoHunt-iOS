@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import SnapKit
 import Shimmer
+import SnapKit
 import CommonUtilities
 
 class CompanyLoadingCellSpec {
@@ -41,9 +41,5 @@ class LoadingCompanyCollectionViewCell: UICollectionViewCell {
         
         shimmerContentView.proportionalCornerRadius = .circular
         shimmerContentView.backgroundColor = UIColor.white.withAlphaComponent(0.1)
-    }
-
-    override func prepareForReuse() {
-        super.prepareForReuse()
     }
 }

@@ -18,8 +18,6 @@
 		0C89FCE61E4ED17300A0A604 /* LoadingCompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89FCE41E4ED17300A0A604 /* LoadingCompanyCollectionViewCell.swift */; };
 		0C89FCE81E4ED19C00A0A604 /* LoadingCompanyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C89FCE71E4ED19C00A0A604 /* LoadingCompanyCollectionViewCell.xib */; };
 		0C89FCE91E4ED19C00A0A604 /* LoadingCompanyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C89FCE71E4ED19C00A0A604 /* LoadingCompanyCollectionViewCell.xib */; };
-		0C89FCF01E4EE47900A0A604 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89FCEF1E4EE47900A0A604 /* ShimmerView.swift */; };
-		0C89FCF11E4EE47900A0A604 /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89FCEF1E4EE47900A0A604 /* ShimmerView.swift */; };
 		0C91154E1E46C1FF00D5C162 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91154C1E46C1FF00D5C162 /* Model.swift */; };
 		0CB8865F1E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */; };
 		0CB886601E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */; };
@@ -75,7 +73,6 @@
 		0C86196A1E41A1110024F70E /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Promo.swift; path = Models/Promo.swift; sourceTree = "<group>"; };
 		0C89FCE41E4ED17300A0A604 /* LoadingCompanyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingCompanyCollectionViewCell.swift; path = Views/LoadingCompanyCollectionViewCell.swift; sourceTree = "<group>"; };
 		0C89FCE71E4ED19C00A0A604 /* LoadingCompanyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingCompanyCollectionViewCell.xib; path = Views/LoadingCompanyCollectionViewCell.xib; sourceTree = "<group>"; };
-		0C89FCEF1E4EE47900A0A604 /* ShimmerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShimmerView.swift; path = Views/ShimmerView.swift; sourceTree = "<group>"; };
 		0C91154C1E46C1FF00D5C162 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Models/Model.swift; sourceTree = "<group>"; };
 		0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HTTPManager.swift .swift"; path = "Networking/HTTPManager.swift .swift"; sourceTree = "<group>"; };
 		0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HTTPManager+Alamofire.swift"; path = "Networking/HTTPManager+Alamofire.swift"; sourceTree = "<group>"; };
@@ -148,7 +145,7 @@
 			children = (
 				0C4F4DD61E3F07E50075085E /* AppDelegate.swift */,
 				0CE77DE71E47ABA100B3FC42 /* View Controllers */,
-				0C89FCE11E4ED13C00A0A604 /* View */,
+				0C89FCE11E4ED13C00A0A604 /* Views */,
 				0C4F4DDD1E3F07E50075085E /* Assets.xcassets */,
 				0C4F4DDF1E3F07E50075085E /* LaunchScreen.storyboard */,
 				0C4F4DE21E3F07E50075085E /* Info.plist */,
@@ -176,14 +173,13 @@
 			path = PromoHuntUITests;
 			sourceTree = "<group>";
 		};
-		0C89FCE11E4ED13C00A0A604 /* View */ = {
+		0C89FCE11E4ED13C00A0A604 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0C89FCEF1E4EE47900A0A604 /* ShimmerView.swift */,
 				0C89FCE41E4ED17300A0A604 /* LoadingCompanyCollectionViewCell.swift */,
 				0C89FCE71E4ED19C00A0A604 /* LoadingCompanyCollectionViewCell.xib */,
 			);
-			name = View;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		0CB8865D1E3F0BD500B94685 /* Networking */ = {
@@ -502,7 +498,6 @@
 				0C86196B1E41A1110024F70E /* Promo.swift in Sources */,
 				0CB886671E3F0F9400B94685 /* API.swift in Sources */,
 				0CE77DE31E47A51100B3FC42 /* CompaniesViewController.swift in Sources */,
-				0C89FCF01E4EE47900A0A604 /* ShimmerView.swift in Sources */,
 				0CB886711E3F386A00B94685 /* Company.swift in Sources */,
 				0C89FCE51E4ED17300A0A604 /* LoadingCompanyCollectionViewCell.swift in Sources */,
 			);
@@ -522,7 +517,6 @@
 				0CB886781E3F3E5500B94685 /* APIHelpers.swift in Sources */,
 				0CB886721E3F386A00B94685 /* Company.swift in Sources */,
 				0CB886681E3F0F9400B94685 /* API.swift in Sources */,
-				0C89FCF11E4EE47900A0A604 /* ShimmerView.swift in Sources */,
 				0CB886601E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */,
 				0C89FCE61E4ED17300A0A604 /* LoadingCompanyCollectionViewCell.swift in Sources */,
 			);

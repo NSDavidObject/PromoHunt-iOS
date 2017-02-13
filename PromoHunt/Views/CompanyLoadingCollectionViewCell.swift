@@ -1,5 +1,5 @@
 //
-//  LoadingCompanyCollectionViewCell.swift
+//  CompanyLoadingCollectionViewCell.swift
 //  PromoHunt
 //
 //  Created by David Elsonbaty on 2/10/17.
@@ -11,21 +11,21 @@ import Shimmer
 import SnapKit
 import CommonUtilities
 
-class CompanyLoadingCellSpec {
+class CompanyLoadingCollectionViewCellSpec {
 
-    static var textPlaceholderBackgroundColor: UIColor = UIColor(hex: "FFFFFF").withAlphaComponent(0.05)
     static func backgroundColor(at indexPath: IndexPath) -> UIColor {
         func isIndexFirstColor(index: Int) -> Bool {
             return index.isEven && CGFloat(index).truncatingRemainder(dividingBy: 4.0) == 0
         }
-        return (isIndexFirstColor(index: indexPath.item) || isIndexFirstColor(index: indexPath.item.successor)) ? UIColor(hex: "#282828") : UIColor(hex: "#303030")
+        let isLightColoredCell = (isIndexFirstColor(index: indexPath.item) || isIndexFirstColor(index: indexPath.item.successor))
+        return isLightColoredCell ? AppColors.lightGrey : AppColors.dardGrey
     }
     static func numberOfCells(in collectionView: UICollectionView) -> Int {
         return Int(collectionView.bounds.height.divided(by: collectionView.bounds.width).multiplied(by: 4.0).rounded(.up))
     }
 }
 
-class LoadingCompanyCollectionViewCell: UICollectionViewCell {
+class CompanyLoadingCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var shimmerView: FBShimmeringView!
     @IBOutlet weak var shimmerContentView: View!

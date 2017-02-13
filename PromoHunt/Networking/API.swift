@@ -45,6 +45,6 @@ struct PromoVoteRequest: Request  {
     static func request(on promo: Promo, vote: Vote, completion: @escaping ((Bool) -> Void)) {
         let absloutePath = String(format: path, promo.id)
         let parameters = self.parameters + ["authentic" : NSNumber(value: vote.authentic)]
-        rawRequest(path: absloutePath, parameters: parameters, completion: { completion($0.result.isSuccess) })
+        jsonRequest(path: absloutePath, parameters: parameters, completion: { completion($0.result.isSuccess) })
     }
 }

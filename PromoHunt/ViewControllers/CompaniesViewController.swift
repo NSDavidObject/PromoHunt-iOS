@@ -26,7 +26,8 @@ class CompaniesViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.isScrollEnabled = false
-        collectionView.register(LoadingCompanyCollectionViewCell.nib(), forCellWithReuseIdentifier: LoadingCompanyCollectionViewCell.reuseIdentifier)
+        collectionView.register(reusableCellWithClass: CompanyCollectionViewCell.self)
+        collectionView.register(reusableCellWithClass: CompanyLoadingCollectionViewCell.self)
 
         fetchCompaniesArray()
     }
@@ -44,13 +45,28 @@ class CompaniesViewController: UIViewController {
 extension CompaniesViewController: UICollectionViewDataSource {
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return companies.count > 0 ? companies.count : CompanyLoadingCellSpec.numberOfCells(in: collectionView)
+        return companies.count > 0 ? companies.count : CompanyLoadingCollectionViewCellSpec.numberOfCells(in: collectionView)
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeue(reusableCellWithClass: LoadingCompanyCollectionViewCell.self, for: indexPath)
-        cell.backgroundColor = CompanyLoadingCellSpec.backgroundColor(at: indexPath)
-        return cell
+        guard companies.count > 0 else {
+            return collectionView.dequeue(reusableCellWithClass: CompanyLoadingCollectionViewCell.self, for: indexPath, customization: {
+                $0.backgroundColor = CompanyLoadingCollectionViewCellSpec.backgroundColor(at: indexPath)
+            })
+        }
+        
+        let company = companies[indexPath.item]
+        return collectionView.dequeue(reusableCellWithClass: CompanyCollectionViewCell.self, for: indexPath, customization: { cell in
+            cell.company = company
+            cell.companyNameLabel.text = company.name
+            cell.companyColorView.backgroundColor = company.color.withAlphaComponent(0.5)
+            cell.backgroundColor = CompanyLoadingCollectionViewCellSpec.backgroundColor(at: indexPath)
+            
+            ImageManager.image(forURL: company.imageURL, completion: { response in
+                guard let imageInfo = response.value, let currentCompany = cell.company, currentCompany.imageURL == imageInfo.url else { return }
+                cell.companyImageView.image = imageInfo.image
+            })
+        })
     }
 }
 
@@ -68,5 +84,4 @@ extension CompaniesViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: cellWidth, height: cellWidth)
     }
 }
-
 

@@ -12,15 +12,19 @@ import CommonUtilities
 struct Company: ObjectMapping {
     let id: UInt64
     let name: String
-    let color: String
-    let image: String
+    let imageURL: URL
+    let color: UIColor
     let promoted: Bool
 
     init(json: JSONDictionary) throws {
         self.id = try UnWrapRequiredValue(json["id"])
         self.name = try UnWrapRequiredValue(json["name"])
-        self.color = try UnWrapRequiredValue(json["color"])
-        self.image = try UnWrapRequiredValue(json["image"])
         self.promoted = Bool(try UnWrapRequiredValue(json["promoted"]) as NSNumber)
+        
+        let imageURLString: String = try UnWrapRequiredValue(json["image"])
+        self.imageURL = try UnWrapRequiredValue(URL(string: imageURLString))
+        
+        let colorHex: String = try UnWrapRequiredValue(json["color"])
+        self.color = UIColor(hex: colorHex)
     }
 }

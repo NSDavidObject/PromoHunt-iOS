@@ -18,11 +18,11 @@ protocol Request {
 }
 
 extension Request {
-    static func rawRequest(path: String = Self.path, parameters: JSONDictionary = [:], completion: @escaping ((HTTPResponse) -> Void)) {
+    static func jsonRequest(path: String = Self.path, parameters: JSONDictionary = [:], completion: @escaping ((HTTPResponse<Any>) -> Void)) {
         let mergedParameters = self.parameters + parameters
         let versionedPath = "v\(version.rawValue.description)/\(path)"
         let authorizedRequest = HTTPRequest.authorizedRequest(path: versionedPath, method: method, parameters: mergedParameters)
-        HTTPManager.makeRequest(authorizedRequest, withCompletion: completion)
+        HTTPManager.makeJSONRequest(authorizedRequest, withCompletion: completion)
     }
 }
 
@@ -48,13 +48,13 @@ protocol ConstructibleResponse {
 
 extension ConstructibleResponse where Self: Request {
     static func request(path: String = Self.path, parameters: JSONDictionary = [:], completion: @escaping ((ResponseReturn<ReturnType>) -> Void)) {
-        rawRequest(path: path, parameters: parameters) { response in
+        jsonRequest(path: path, parameters: parameters) { response in
             DispatchQueue.global().async {
 
                 var result: ResponseReturn<ReturnType>
                 if let json = response.result.value, response.result.isSuccess {
                     do {
-                        result = try .value(constructResponse(json: json))
+                        result = try .value(constructResponse(json: json as AnyObject))
                     } catch {
                         result = .error
                     }

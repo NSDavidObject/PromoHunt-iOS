@@ -16,10 +16,10 @@ extension HTTPRequest {
 }
 
 extension Alamofire.Result {
-    func resultFromAlamofire() -> Result<AnyObject>  {
+    func resultFromAlamofire() -> Result<Value>  {
         switch self {
         case .success(let value):
-            return Result.success(value as AnyObject)
+            return Result.success(value)
         case .failure(let error):
             return .failure(error as NSError)
         }

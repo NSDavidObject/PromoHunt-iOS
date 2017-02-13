@@ -1,5 +1,5 @@
 //
-//  HTTPManager.swift .swift
+//  HTTPManager.swift
 //  PromoHunt
 //
 //  Created by David Elsonbaty on 1/29/17.
@@ -29,16 +29,27 @@ struct HTTPRequest {
     let parameters: JSONDictionary?
 }
 
-struct HTTPResponse {
+struct HTTPResponse<T> {
     let rawData: Data?
     let requestURL: String?
-    let result: Result<AnyObject>
+    let result: Result<T>
 }
 
 class HTTPManager {
-    class func makeRequest(_ request: HTTPRequest, withCompletion completion: @escaping (HTTPResponse) -> Void) {
+    
+    static func makeJSONRequest(_ request: HTTPRequest, withCompletion completion: @escaping (HTTPResponse<Any>) -> Void) {
         DispatchQueue.global().async {
             Alamofire.request(request.urlString, method: request.alamofireMethod(), parameters: request.parameters, headers: request.headers).responseJSON { response in
+                DispatchQueue.main.async {
+                    completion(HTTPResponse(rawData: response.data, requestURL: request.urlString, result: response.result.resultFromAlamofire()))
+                }
+            }
+        }
+    }
+    
+    static func makeDataRequest(_ request: HTTPRequest, withCompletion completion: @escaping (HTTPResponse<Data>) -> Void) {
+        DispatchQueue.global().async {
+            Alamofire.request(request.urlString, method: request.alamofireMethod(), parameters: request.parameters, headers: request.headers).responseData { response in
                 DispatchQueue.main.async {
                     completion(HTTPResponse(rawData: response.data, requestURL: request.urlString, result: response.result.resultFromAlamofire()))
                 }

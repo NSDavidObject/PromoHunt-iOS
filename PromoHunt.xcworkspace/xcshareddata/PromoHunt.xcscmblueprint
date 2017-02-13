@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1D81F0747AA5EF9C4D00B640A18B144A38A47595",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9716B34F8FCB2955B4AF86AF3C257092C63B4A35" : 9223372036854775807,
+    "1D81F0747AA5EF9C4D00B640A18B144A38A47595" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E8E847F3-ACCD-4080-9BBC-32975103B28F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9716B34F8FCB2955B4AF86AF3C257092C63B4A35" : "..\/CommonUtilities",
+    "1D81F0747AA5EF9C4D00B640A18B144A38A47595" : "iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PromoHunt",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PromoHunt.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/davoda\/PromoHunt-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1D81F0747AA5EF9C4D00B640A18B144A38A47595"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/davoda\/CommonUtilities.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9716B34F8FCB2955B4AF86AF3C257092C63B4A35"
+    }
+  ]
+}

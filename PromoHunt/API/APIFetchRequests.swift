@@ -25,22 +25,40 @@ extension Request {
     }
 }
 
+enum ResponseReturn<T> {
+    case value(T)
+    case error
+
+    var value: T? {
+        if case let .value(value) = self {
+            return value
+        }
+        return nil
+    }
+}
+
 // MARK: - ConstructibleResponse
 protocol ConstructibleResponse {
     associatedtype Model: ObjectMapping
     associatedtype ReturnType
 
-    static func constructResponse(json: AnyObject) -> ReturnType?
+    static func constructResponse(json: AnyObject) throws -> ReturnType
 }
 
 extension ConstructibleResponse where Self: Request {
-    static func request(path: String = Self.path, parameters: JSONDictionary = [:], completion: @escaping ((ReturnType?) -> Void)) {
+    static func request(path: String = Self.path, parameters: JSONDictionary = [:], completion: @escaping ((ResponseReturn<ReturnType>) -> Void)) {
         rawRequest(path: path, parameters: parameters) { response in
             DispatchQueue.global().async {
 
-                var result: ReturnType?
+                var result: ResponseReturn<ReturnType>
                 if let json = response.result.value, response.result.isSuccess {
-                    result = constructResponse(json: json)
+                    do {
+                        result = try .value(constructResponse(json: json))
+                    } catch {
+                        result = .error
+                    }
+                } else {
+                    result = .error
                 }
 
                 DispatchQueue.main.async {
@@ -57,9 +75,9 @@ protocol ModelConstructibleResponse: ConstructibleResponse {
 }
 
 extension ModelConstructibleResponse {
-    static func constructResponse(json: AnyObject) -> Model? {
-        guard let jsonDictionary = json as? JSONDictionary else { return nil }
-        return try? Model.init(json: jsonDictionary)
+    static func constructResponse(json: AnyObject) throws -> Model {
+        guard let jsonDictionary = json as? JSONDictionary else { throw ParsingError.unexpectedType }
+        return try Model.init(json: jsonDictionary)
     }
 }
 

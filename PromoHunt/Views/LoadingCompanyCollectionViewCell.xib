@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hJO-iM-7an" customClass="LoadingCompanyCollectionViewCell" customModule="PromoHunt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiS-Ub-mKM" customClass="ShimmerView" customModule="PromoHunt" customModuleProvider="target">
+                        <rect key="frame" x="40" y="80" width="110" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="MiS-Ub-mKM" secondAttribute="height" multiplier="11:3" id="R4b-OE-gOd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="MiS-Ub-mKM" firstAttribute="centerY" secondItem="hJO-iM-7an" secondAttribute="centerY" id="Inb-pe-Jfo"/>
+                <constraint firstItem="MiS-Ub-mKM" firstAttribute="height" secondItem="hJO-iM-7an" secondAttribute="height" multiplier="30:190" id="enp-cc-iyE"/>
+                <constraint firstItem="MiS-Ub-mKM" firstAttribute="centerX" secondItem="hJO-iM-7an" secondAttribute="centerX" id="nZu-3L-2HL"/>
+            </constraints>
+            <size key="customSize" width="274" height="247"/>
+            <connections>
+                <outlet property="textPlaceholderView" destination="MiS-Ub-mKM" id="BIX-cG-xXz"/>
+            </connections>
+            <point key="canvasLocation" x="-666" y="-69"/>
+        </collectionViewCell>
+    </objects>
+</document>

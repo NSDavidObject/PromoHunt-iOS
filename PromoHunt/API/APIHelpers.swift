@@ -9,7 +9,7 @@
 import Foundation
 
 private struct Constants {
-    static let Host = "http://promohunt.codes:3000/api/"
+    static let Host = "https://peaceful-island-42708.herokuapp.com/api/"
 }
 
 extension HTTPRequest {

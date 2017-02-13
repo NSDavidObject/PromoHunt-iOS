@@ -29,7 +29,7 @@ struct PromosFetchRequest: Request, ModelArrayConstructibleResponse {
     static var version: ApiVersion = .one
     static var parameters: JSONDictionary = [:]
 
-    static func request(for company: Company, completion: @escaping (([Promo]?) -> Void)) {
+    static func request(for company: Company, completion: @escaping ((ResponseReturn<[Promo]>) -> Void)) {
         let absloutePath = String(format: path, arguments: [company.id])
         request(path: absloutePath, completion: completion)
     }

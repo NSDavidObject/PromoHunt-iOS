@@ -12,7 +12,8 @@ import CommonUtilities
 class CompaniesViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-
+    
+    var zoomTransition: ZoomTransition?
     var companies = [Company]() {
         didSet {
             collectionView.reloadData()
@@ -34,7 +35,6 @@ class CompaniesViewController: UIViewController {
 
     func fetchCompaniesArray() {
         companies = []
-        collectionView.isScrollEnabled = false
         CompaniesFetchRequest.request { response in
             guard let companies = response.value else { return }
             self.companies = companies
@@ -49,7 +49,9 @@ extension CompaniesViewController: UICollectionViewDataSource {
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard companies.count > 0 else {
+        precondition(companies.count == 0 || companies.count > indexPath.item)
+        
+        if companies.count == 0 {
             return collectionView.dequeue(reusableCellWithClass: CompanyLoadingCollectionViewCell.self, for: indexPath, customization: {
                 $0.backgroundColor = CompanyLoadingCollectionViewCellSpec.backgroundColor(at: indexPath)
             })
@@ -58,14 +60,8 @@ extension CompaniesViewController: UICollectionViewDataSource {
         let company = companies[indexPath.item]
         return collectionView.dequeue(reusableCellWithClass: CompanyCollectionViewCell.self, for: indexPath, customization: { cell in
             cell.company = company
-            cell.companyNameLabel.text = company.name
-            cell.companyColorView.backgroundColor = company.color.withAlphaComponent(0.5)
+            cell.companyDetailsView.company = company
             cell.backgroundColor = CompanyLoadingCollectionViewCellSpec.backgroundColor(at: indexPath)
-            
-            ImageManager.image(forURL: company.imageURL, completion: { response in
-                guard let imageInfo = response.value, let currentCompany = cell.company, currentCompany.imageURL == imageInfo.url else { return }
-                cell.companyImageView.image = imageInfo.image
-            })
         })
     }
 }
@@ -73,7 +69,21 @@ extension CompaniesViewController: UICollectionViewDataSource {
 extension CompaniesViewController: UICollectionViewDelegate {
 
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard companies.count > indexPath.item else { return }
+        guard let companyCell = collectionView.cellForItem(at: indexPath) as? CompanyCollectionViewCell else { return }
+        guard let navigationController = navigationController else { return }
         
+//        let company = companies[indexPath.item]
+        
+        let promosViewController = PromosViewController.controllerFromNib()
+        
+        if let navigationController = self.navigationController {
+            zoomTransition = ZoomTransition(navigationController: navigationController)
+            zoomTransition?.intialView = companyCell.companyDetailsView
+        }
+        
+        navigationController.delegate = zoomTransition
+        navigationController.pushViewController(promosViewController, animated: true)
     }
 }
 
@@ -82,6 +92,17 @@ extension CompaniesViewController: UICollectionViewDelegateFlowLayout {
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = collectionView.frame.width.half
         return CGSize(width: cellWidth, height: cellWidth)
+    }
+}
+
+extension CompaniesViewController: ZoomTransitionProtocol {
+    
+    func viewForTransition() -> UIView {
+        return zoomTransition!.intialView!
+    }
+    
+    func didCompleteTransition(fromView: UIView) {
+        
     }
 }
 

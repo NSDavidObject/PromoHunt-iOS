@@ -10,10 +10,16 @@ import UIKit
 
 class CompanyCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var companyColorView: UIView!
-    @IBOutlet weak var companyNameLabel: UILabel!
-    @IBOutlet weak var companyImageView: UIImageView!
-    
     var company: Company?
+    var companyDetailsView: CompanyDetailsView!
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        companyDetailsView = CompanyDetailsView.instanceFromNib() 
+        contentView.addSubview(companyDetailsView)
+        companyDetailsView.snp.makeConstraints { maker in
+            maker.edges.equalTo(contentView)
+        }
+    }
 }

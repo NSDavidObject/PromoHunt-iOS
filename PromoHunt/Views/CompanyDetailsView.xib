@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="Cgb-oQ-qG2" customClass="CompanyDetailsView" customModule="PromoHunt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jaq-9a-0Fb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Jaq-9a-0Fb" secondAttribute="height" multiplier="1:1" id="asa-w5-nor"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="uberEats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIn-lx-FCN">
+                    <rect key="frame" x="135.5" y="171.5" width="104.5" height="33.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jaq-9a-0Fb" secondAttribute="trailing" id="Byj-RZ-50r"/>
+                <constraint firstItem="Jaq-9a-0Fb" firstAttribute="leading" secondItem="Cgb-oQ-qG2" secondAttribute="leading" id="TOG-Gy-Kk3"/>
+                <constraint firstItem="Jaq-9a-0Fb" firstAttribute="centerX" secondItem="Cgb-oQ-qG2" secondAttribute="centerX" id="roG-YQ-ln0"/>
+                <constraint firstItem="Jaq-9a-0Fb" firstAttribute="centerY" secondItem="Cgb-oQ-qG2" secondAttribute="centerY" id="yuG-ZL-FAX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imageView" destination="Jaq-9a-0Fb" id="RkE-w9-iQB"/>
+                <outlet property="nameLabel" destination="QIn-lx-FCN" id="CuL-3n-f7H"/>
+            </connections>
+        </view>
+    </objects>
+</document>

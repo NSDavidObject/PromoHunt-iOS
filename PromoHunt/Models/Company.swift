@@ -28,3 +28,14 @@ struct Company: ObjectMapping {
         self.color = UIColor(hex: colorHex)
     }
 }
+
+extension Company: Hashable {
+
+    var hashValue: Int {
+        return id.hashValue
+    }
+    
+    static func ==(lhs: Company, rhs: Company) -> Bool {
+        return lhs.id == rhs.id && lhs.name == rhs.name && lhs.imageURL == rhs.imageURL && lhs.color == rhs.color
+    }
+}

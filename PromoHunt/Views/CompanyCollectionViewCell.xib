@@ -14,39 +14,7 @@
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="etd-uO-7of" customClass="CompanyCollectionViewCell" customModule="PromoHunt" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jil-7F-GWS">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-                </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkR-Ff-hbC">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uberEats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06n-RO-Ccz">
-                    <rect key="frame" x="135.5" y="171.5" width="104.5" height="33.5"/>
-                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstItem="06n-RO-Ccz" firstAttribute="centerY" secondItem="KkR-Ff-hbC" secondAttribute="centerY" id="0OT-eP-U8U"/>
-                <constraint firstItem="KkR-Ff-hbC" firstAttribute="top" secondItem="etd-uO-7of" secondAttribute="top" id="3L1-GW-VCh"/>
-                <constraint firstItem="06n-RO-Ccz" firstAttribute="centerX" secondItem="KkR-Ff-hbC" secondAttribute="centerX" id="IZp-TR-Ggr"/>
-                <constraint firstAttribute="trailing" secondItem="KkR-Ff-hbC" secondAttribute="trailing" id="OnZ-eF-wbU"/>
-                <constraint firstAttribute="trailing" secondItem="Jil-7F-GWS" secondAttribute="trailing" id="c2P-VB-fhx"/>
-                <constraint firstAttribute="bottom" secondItem="KkR-Ff-hbC" secondAttribute="bottom" id="fUu-bb-D1l"/>
-                <constraint firstAttribute="bottom" secondItem="Jil-7F-GWS" secondAttribute="bottom" id="fcP-V0-GZz"/>
-                <constraint firstItem="Jil-7F-GWS" firstAttribute="top" secondItem="etd-uO-7of" secondAttribute="top" id="ofT-qo-hMV"/>
-                <constraint firstItem="KkR-Ff-hbC" firstAttribute="leading" secondItem="etd-uO-7of" secondAttribute="leading" id="osJ-OT-VGp"/>
-                <constraint firstItem="Jil-7F-GWS" firstAttribute="leading" secondItem="etd-uO-7of" secondAttribute="leading" id="vZB-Qc-vxv"/>
-            </constraints>
-            <connections>
-                <outlet property="companyColorView" destination="KkR-Ff-hbC" id="de9-5Y-lx6"/>
-                <outlet property="companyImageView" destination="Jil-7F-GWS" id="kOx-7x-0fo"/>
-                <outlet property="companyNameLabel" destination="06n-RO-Ccz" id="irI-jv-Jah"/>
-            </connections>
             <point key="canvasLocation" x="-50" y="-131"/>
         </collectionReusableView>
     </objects>

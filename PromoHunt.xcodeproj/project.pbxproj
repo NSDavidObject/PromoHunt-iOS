@@ -45,6 +45,17 @@
 		550DA0991E5166E30071B3B9 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA0981E5166E30071B3B9 /* ImageManager.swift */; };
 		550DA09B1E516CD50071B3B9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA09A1E516CD50071B3B9 /* ImageCache.swift */; };
 		550DA09C1E516CD50071B3B9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA09A1E516CD50071B3B9 /* ImageCache.swift */; };
+		55DB4BB51E52BEC6003146E4 /* PromosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */; };
+		55DB4BB61E52BEC6003146E4 /* PromosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */; };
+		55DB4BB71E52BEC6003146E4 /* PromosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */; };
+		55DB4BB81E52BEC6003146E4 /* PromosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */; };
+		55DB4BBA1E52C5AF003146E4 /* ZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB91E52C5AF003146E4 /* ZoomTransition.swift */; };
+		55DB4BBB1E52C5AF003146E4 /* ZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB91E52C5AF003146E4 /* ZoomTransition.swift */; };
+		55DB4BBD1E52CFF5003146E4 /* CompanyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BBC1E52CFF5003146E4 /* CompanyDetailsView.swift */; };
+		55DB4BBE1E52CFF5003146E4 /* CompanyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BBC1E52CFF5003146E4 /* CompanyDetailsView.swift */; };
+		55DB4BC01E52D004003146E4 /* CompanyDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BBF1E52D004003146E4 /* CompanyDetailsView.xib */; };
+		55DB4BC11E52D004003146E4 /* CompanyDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BBF1E52D004003146E4 /* CompanyDetailsView.xib */; };
+		55DB4BC21E52D871003146E4 /* CompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA08F1E5156800071B3B9 /* CompanyCollectionViewCell.swift */; };
 		80FB70E8689B187047F595B9 /* Pods_PromoHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0394FD180E63AD4CA7DEB27 /* Pods_PromoHunt.framework */; };
 		BD5076834142A02F89B474D3 /* Pods_PromoHuntTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 318C2658CB69E2872AACEE91 /* Pods_PromoHuntTests.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +109,11 @@
 		550DA0951E515F2E0071B3B9 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Networking/ImageDownloader.swift; sourceTree = "<group>"; };
 		550DA0981E5166E30071B3B9 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageManager.swift; path = Networking/ImageManager.swift; sourceTree = "<group>"; };
 		550DA09A1E516CD50071B3B9 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Networking/ImageCache.swift; sourceTree = "<group>"; };
+		55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromosViewController.swift; path = ViewControllers/PromosViewController.swift; sourceTree = "<group>"; };
+		55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PromosViewController.xib; path = ViewControllers/PromosViewController.xib; sourceTree = "<group>"; };
+		55DB4BB91E52C5AF003146E4 /* ZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomTransition.swift; path = ../ZoomTransition.swift; sourceTree = "<group>"; };
+		55DB4BBC1E52CFF5003146E4 /* CompanyDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyDetailsView.swift; path = Views/CompanyDetailsView.swift; sourceTree = "<group>"; };
+		55DB4BBF1E52D004003146E4 /* CompanyDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompanyDetailsView.xib; path = Views/CompanyDetailsView.xib; sourceTree = "<group>"; };
 		8D089B5901193D6E4A67257B /* Pods-PromoHuntTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHuntTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHuntTests/Pods-PromoHuntTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DB6A23E5C4744161B84EA30 /* Pods-PromoHunt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHunt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHunt/Pods-PromoHunt.debug.xcconfig"; sourceTree = "<group>"; };
 		BFEF774E4C75C8B1D7CC0D8E /* Pods-PromoHuntTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHuntTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHuntTests/Pods-PromoHuntTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +178,7 @@
 				0C4F4DDD1E3F07E50075085E /* Assets.xcassets */,
 				0C4F4DDF1E3F07E50075085E /* LaunchScreen.storyboard */,
 				0C4F4DE21E3F07E50075085E /* Info.plist */,
+				55DB4BC31E52DFAE003146E4 /* Imports */,
 				550DA08C1E5151AD0071B3B9 /* Helpers */,
 				0CB8866C1E3F17E300B94685 /* Models */,
 				0CB8865D1E3F0BD500B94685 /* Networking */,
@@ -190,6 +207,8 @@
 		0C89FCE11E4ED13C00A0A604 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				55DB4BBC1E52CFF5003146E4 /* CompanyDetailsView.swift */,
+				55DB4BBF1E52D004003146E4 /* CompanyDetailsView.xib */,
 				550DA08F1E5156800071B3B9 /* CompanyCollectionViewCell.swift */,
 				550DA0911E51568B0071B3B9 /* CompanyCollectionViewCell.xib */,
 				0C89FCE41E4ED17300A0A604 /* CompanyLoadingCollectionViewCell.swift */,
@@ -240,6 +259,8 @@
 		0CE77DE71E47ABA100B3FC42 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */,
+				55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */,
 				0CE77DE11E47A51100B3FC42 /* CompaniesViewController.swift */,
 				0CE77DE21E47A51100B3FC42 /* CompaniesViewController.xib */,
 			);
@@ -262,6 +283,14 @@
 				550DA0951E515F2E0071B3B9 /* ImageDownloader.swift */,
 			);
 			name = ImageManager;
+			sourceTree = "<group>";
+		};
+		55DB4BC31E52DFAE003146E4 /* Imports */ = {
+			isa = PBXGroup;
+			children = (
+				55DB4BB91E52C5AF003146E4 /* ZoomTransition.swift */,
+			);
+			name = Imports;
 			sourceTree = "<group>";
 		};
 		B6284B8E4BF238663D732A04 /* Pods */ = {
@@ -400,6 +429,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DB4BB71E52BEC6003146E4 /* PromosViewController.xib in Resources */,
+				55DB4BC01E52D004003146E4 /* CompanyDetailsView.xib in Resources */,
 				550DA0921E51568B0071B3B9 /* CompanyCollectionViewCell.xib in Resources */,
 				0C4F4DE11E3F07E50075085E /* LaunchScreen.storyboard in Resources */,
 				0C89FCE81E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib in Resources */,
@@ -412,8 +443,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DB4BB81E52BEC6003146E4 /* PromosViewController.xib in Resources */,
 				550DA0931E5159BB0071B3B9 /* CompanyCollectionViewCell.xib in Resources */,
 				0CE77DE61E47A51100B3FC42 /* CompaniesViewController.xib in Resources */,
+				55DB4BC11E52D004003146E4 /* CompanyDetailsView.xib in Resources */,
 				0C89FCE91E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,11 +559,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB886771E3F3E5500B94685 /* APIHelpers.swift in Sources */,
+				55DB4BBD1E52CFF5003146E4 /* CompanyDetailsView.swift in Sources */,
 				0CB886621E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */,
 				550DA09B1E516CD50071B3B9 /* ImageCache.swift in Sources */,
 				550DA0961E515F2E0071B3B9 /* ImageDownloader.swift in Sources */,
 				0CB8866A1E3F0FAE00B94685 /* Secrets.swift in Sources */,
+				55DB4BBA1E52C5AF003146E4 /* ZoomTransition.swift in Sources */,
 				0CB886741E3F3D9300B94685 /* APIFetchRequests.swift in Sources */,
+				55DB4BB51E52BEC6003146E4 /* PromosViewController.swift in Sources */,
 				0CB8865F1E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */,
 				550DA0991E5166E30071B3B9 /* ImageManager.swift in Sources */,
 				0C4F4DD71E3F07E50075085E /* AppDelegate.swift in Sources */,
@@ -556,9 +592,13 @@
 				0CE77DE41E47A51100B3FC42 /* CompaniesViewController.swift in Sources */,
 				0CB886631E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */,
 				0CB886781E3F3E5500B94685 /* APIHelpers.swift in Sources */,
+				55DB4BBB1E52C5AF003146E4 /* ZoomTransition.swift in Sources */,
 				0CB886721E3F386A00B94685 /* Company.swift in Sources */,
 				0CB886681E3F0F9400B94685 /* API.swift in Sources */,
+				55DB4BBE1E52CFF5003146E4 /* CompanyDetailsView.swift in Sources */,
+				55DB4BB61E52BEC6003146E4 /* PromosViewController.swift in Sources */,
 				0CB886601E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */,
+				55DB4BC21E52D871003146E4 /* CompanyCollectionViewCell.swift in Sources */,
 				550DA0971E515F300071B3B9 /* ImageDownloader.swift in Sources */,
 				0C89FCE61E4ED17300A0A604 /* CompanyLoadingCollectionViewCell.swift in Sources */,
 			);

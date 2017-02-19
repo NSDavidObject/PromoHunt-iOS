@@ -22,9 +22,8 @@
                         <constraint firstAttribute="width" secondItem="Jaq-9a-0Fb" secondAttribute="height" multiplier="1:1" id="asa-w5-nor"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="uberEats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIn-lx-FCN">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uberEats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIn-lx-FCN">
                     <rect key="frame" x="135.5" y="171.5" width="104.5" height="33.5"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -32,7 +31,9 @@
             </subviews>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Jaq-9a-0Fb" secondAttribute="trailing" id="Byj-RZ-50r"/>
+                <constraint firstItem="QIn-lx-FCN" firstAttribute="centerY" secondItem="Cgb-oQ-qG2" secondAttribute="centerY" id="EWd-OO-Cgf"/>
                 <constraint firstItem="Jaq-9a-0Fb" firstAttribute="leading" secondItem="Cgb-oQ-qG2" secondAttribute="leading" id="TOG-Gy-Kk3"/>
+                <constraint firstItem="QIn-lx-FCN" firstAttribute="centerX" secondItem="Cgb-oQ-qG2" secondAttribute="centerX" id="cIg-au-Ba3"/>
                 <constraint firstItem="Jaq-9a-0Fb" firstAttribute="centerX" secondItem="Cgb-oQ-qG2" secondAttribute="centerX" id="roG-YQ-ln0"/>
                 <constraint firstItem="Jaq-9a-0Fb" firstAttribute="centerY" secondItem="Cgb-oQ-qG2" secondAttribute="centerY" id="yuG-ZL-FAX"/>
             </constraints>

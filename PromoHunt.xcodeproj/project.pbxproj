@@ -45,6 +45,11 @@
 		550DA0991E5166E30071B3B9 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA0981E5166E30071B3B9 /* ImageManager.swift */; };
 		550DA09B1E516CD50071B3B9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA09A1E516CD50071B3B9 /* ImageCache.swift */; };
 		550DA09C1E516CD50071B3B9 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA09A1E516CD50071B3B9 /* ImageCache.swift */; };
+		55AF3EBE1E5A5B190027D3EE /* PromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF3EBD1E5A5B190027D3EE /* PromoTableViewCell.swift */; };
+		55AF3EC01E5A5B290027D3EE /* PromoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55AF3EBF1E5A5B290027D3EE /* PromoTableViewCell.xib */; };
+		55AF3EC41E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF3EC31E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift */; };
+		55AF3EC61E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55AF3EC51E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib */; };
+		55AF3ECA1E5AC6410027D3EE /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF3EC91E5AC6410027D3EE /* ShimmerView.swift */; };
 		55DB4BB51E52BEC6003146E4 /* PromosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */; };
 		55DB4BB61E52BEC6003146E4 /* PromosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */; };
 		55DB4BB71E52BEC6003146E4 /* PromosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */; };
@@ -109,6 +114,11 @@
 		550DA0951E515F2E0071B3B9 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Networking/ImageDownloader.swift; sourceTree = "<group>"; };
 		550DA0981E5166E30071B3B9 /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageManager.swift; path = Networking/ImageManager.swift; sourceTree = "<group>"; };
 		550DA09A1E516CD50071B3B9 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Networking/ImageCache.swift; sourceTree = "<group>"; };
+		55AF3EBD1E5A5B190027D3EE /* PromoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromoTableViewCell.swift; path = Views/PromoTableViewCell.swift; sourceTree = "<group>"; };
+		55AF3EBF1E5A5B290027D3EE /* PromoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PromoTableViewCell.xib; path = Views/PromoTableViewCell.xib; sourceTree = "<group>"; };
+		55AF3EC31E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromoLoadingTableViewCell.swift; path = Views/PromoLoadingTableViewCell.swift; sourceTree = "<group>"; };
+		55AF3EC51E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PromoLoadingTableViewCell.xib; path = Views/PromoLoadingTableViewCell.xib; sourceTree = "<group>"; };
+		55AF3EC91E5AC6410027D3EE /* ShimmerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShimmerView.swift; path = Views/ShimmerView.swift; sourceTree = "<group>"; };
 		55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromosViewController.swift; path = ViewControllers/PromosViewController.swift; sourceTree = "<group>"; };
 		55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PromosViewController.xib; path = ViewControllers/PromosViewController.xib; sourceTree = "<group>"; };
 		55DB4BB91E52C5AF003146E4 /* ZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomTransition.swift; path = ../ZoomTransition.swift; sourceTree = "<group>"; };
@@ -207,12 +217,11 @@
 		0C89FCE11E4ED13C00A0A604 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				55AF3EC91E5AC6410027D3EE /* ShimmerView.swift */,
 				55DB4BBC1E52CFF5003146E4 /* CompanyDetailsView.swift */,
 				55DB4BBF1E52D004003146E4 /* CompanyDetailsView.xib */,
-				550DA08F1E5156800071B3B9 /* CompanyCollectionViewCell.swift */,
-				550DA0911E51568B0071B3B9 /* CompanyCollectionViewCell.xib */,
-				0C89FCE41E4ED17300A0A604 /* CompanyLoadingCollectionViewCell.swift */,
-				0C89FCE71E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib */,
+				55AF3EC81E5AC2D50027D3EE /* Company Collection View Cells */,
+				55AF3EC71E5AC2CB0027D3EE /* Promo Table View Cells */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -283,6 +292,28 @@
 				550DA0951E515F2E0071B3B9 /* ImageDownloader.swift */,
 			);
 			name = ImageManager;
+			sourceTree = "<group>";
+		};
+		55AF3EC71E5AC2CB0027D3EE /* Promo Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				55AF3EBD1E5A5B190027D3EE /* PromoTableViewCell.swift */,
+				55AF3EBF1E5A5B290027D3EE /* PromoTableViewCell.xib */,
+				55AF3EC31E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift */,
+				55AF3EC51E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib */,
+			);
+			name = "Promo Table View Cells";
+			sourceTree = "<group>";
+		};
+		55AF3EC81E5AC2D50027D3EE /* Company Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				550DA08F1E5156800071B3B9 /* CompanyCollectionViewCell.swift */,
+				550DA0911E51568B0071B3B9 /* CompanyCollectionViewCell.xib */,
+				0C89FCE41E4ED17300A0A604 /* CompanyLoadingCollectionViewCell.swift */,
+				0C89FCE71E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib */,
+			);
+			name = "Company Collection View Cells";
 			sourceTree = "<group>";
 		};
 		55DB4BC31E52DFAE003146E4 /* Imports */ = {
@@ -431,11 +462,13 @@
 			files = (
 				55DB4BB71E52BEC6003146E4 /* PromosViewController.xib in Resources */,
 				55DB4BC01E52D004003146E4 /* CompanyDetailsView.xib in Resources */,
+				55AF3EC61E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib in Resources */,
 				550DA0921E51568B0071B3B9 /* CompanyCollectionViewCell.xib in Resources */,
 				0C4F4DE11E3F07E50075085E /* LaunchScreen.storyboard in Resources */,
 				0C89FCE81E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib in Resources */,
 				0C4F4DDE1E3F07E50075085E /* Assets.xcassets in Resources */,
 				0CE77DE51E47A51100B3FC42 /* CompaniesViewController.xib in Resources */,
+				55AF3EC01E5A5B290027D3EE /* PromoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +594,8 @@
 				0CB886771E3F3E5500B94685 /* APIHelpers.swift in Sources */,
 				55DB4BBD1E52CFF5003146E4 /* CompanyDetailsView.swift in Sources */,
 				0CB886621E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */,
+				55AF3EBE1E5A5B190027D3EE /* PromoTableViewCell.swift in Sources */,
+				55AF3EC41E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift in Sources */,
 				550DA09B1E516CD50071B3B9 /* ImageCache.swift in Sources */,
 				550DA0961E515F2E0071B3B9 /* ImageDownloader.swift in Sources */,
 				0CB8866A1E3F0FAE00B94685 /* Secrets.swift in Sources */,
@@ -572,6 +607,7 @@
 				0C4F4DD71E3F07E50075085E /* AppDelegate.swift in Sources */,
 				0C86196B1E41A1110024F70E /* Promo.swift in Sources */,
 				0CB886671E3F0F9400B94685 /* API.swift in Sources */,
+				55AF3ECA1E5AC6410027D3EE /* ShimmerView.swift in Sources */,
 				0CE77DE31E47A51100B3FC42 /* CompaniesViewController.swift in Sources */,
 				550DA0901E5156800071B3B9 /* CompanyCollectionViewCell.swift in Sources */,
 				550DA08E1E5151D40071B3B9 /* AppColors.swift in Sources */,

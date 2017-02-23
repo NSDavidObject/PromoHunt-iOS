@@ -22,14 +22,36 @@ enum CacheUsability<T> {
     }
 }
 
+enum CachableResult<T> {
+    case download(T)
+    case memory(T)
+    case error
+    
+    var value: T? {
+        switch self {
+        case .download(let value): return value
+        case .memory(let value): return value
+        case .error: return nil
+        }
+    }
+    
+    var fromCache: Bool {
+        switch self {
+        case .download: return false
+        case .memory: return true
+        case .error: return false
+        }
+    }
+}
+
 class ImageManager {
     
     private init() {}
     
-    static func image(forURL url: URL, usingCache cacheUsability: CacheUsability<ImageCache> = .cache(ImageCache.shared), completion: @escaping ((ResponseReturn<(url: URL, image: UIImage)>) -> Void)) {
+    static func image(forURL url: URL, usingCache cacheUsability: CacheUsability<ImageCache> = .cache(ImageCache.shared), completion: @escaping ((CachableResult<(url: URL, image: UIImage)>) -> Void)) {
         let cache = cacheUsability.cache
         if let cachedImage = cache?[url] {
-            completion(.value((url: url, image: cachedImage)))
+            completion(.memory((url: url, image: cachedImage)))
         } else {
             ImageDownloader.download(imageForUrl: url) { response in
                 guard let image = response.value else {
@@ -38,8 +60,9 @@ class ImageManager {
                 }
                 
                 cache?[url] = image
-                completion(.value((url: url, image: image)))
+                completion(.download((url: url, image: image)))
             }
         }
     }
 }
+

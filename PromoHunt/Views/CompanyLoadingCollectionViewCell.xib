@@ -20,20 +20,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiS-Ub-mKM" customClass="FBShimmeringView">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MiS-Ub-mKM" customClass="ShimmerView" customModule="PromoHunt" customModuleProvider="target">
                         <rect key="frame" x="40" y="80" width="110" height="30"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33i-OC-jwJ" customClass="View" customModule="CommonUtilities">
-                                <rect key="frame" x="0.0" y="0.0" width="110" height="30"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="33i-OC-jwJ" secondAttribute="bottom" id="IEy-CV-EiA"/>
                             <constraint firstAttribute="width" secondItem="MiS-Ub-mKM" secondAttribute="height" multiplier="11:3" id="R4b-OE-gOd"/>
-                            <constraint firstItem="33i-OC-jwJ" firstAttribute="leading" secondItem="MiS-Ub-mKM" secondAttribute="leading" id="cL2-jO-cB6"/>
-                            <constraint firstItem="33i-OC-jwJ" firstAttribute="top" secondItem="MiS-Ub-mKM" secondAttribute="top" id="fay-Rw-Gul"/>
-                            <constraint firstAttribute="trailing" secondItem="33i-OC-jwJ" secondAttribute="trailing" id="rqI-lH-gdT"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -46,10 +37,9 @@
             </constraints>
             <size key="customSize" width="274" height="247"/>
             <connections>
-                <outlet property="shimmerContentView" destination="33i-OC-jwJ" id="0HQ-Rx-Jvp"/>
                 <outlet property="shimmerView" destination="MiS-Ub-mKM" id="RhD-O9-6ZF"/>
             </connections>
-            <point key="canvasLocation" x="-666" y="-69"/>
+            <point key="canvasLocation" x="-912" y="-268"/>
         </collectionViewCell>
     </objects>
 </document>

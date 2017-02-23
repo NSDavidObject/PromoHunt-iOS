@@ -10,8 +10,11 @@ import UIKit
 
 class CompanyDetailsView: UIView {
 
+    private static let ImageDownloadAnimationDuration = 0.5
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var nameLabelVerticalOffset: NSLayoutConstraint!
     
     var company: Company? {
         didSet {
@@ -33,9 +36,17 @@ class CompanyDetailsView: UIView {
     
     func setup(with company: Company) {
         nameLabel.text = company.name
-        CompanyOverlayedImageHelper.image(forCompany: company) { [weak self] response in
-            guard let imageInfo = response.value, let strongSelf = self else { return }
+        CompanyOverlayedImageHelper.image(forCompany: company) { [weak self] cachableResponse in
+            guard let imageInfo = cachableResponse.value, let strongSelf = self else { return }
             guard let currentCompany = strongSelf.company, currentCompany == imageInfo.company else { return }
+            
+            if !cachableResponse.fromCache {
+                strongSelf.imageView.alpha = 0.0
+                UIView.animate(withDuration: CompanyDetailsView.ImageDownloadAnimationDuration, animations: {
+                    strongSelf.imageView.alpha = 1.0
+                })
+            }
+            
             strongSelf.imageView.image = imageInfo.image
         }
     }
@@ -47,11 +58,11 @@ class OverlayedCompanyImageCache: MemoryCache<Company, UIImage> {
 
 class CompanyOverlayedImageHelper {
     
-    static func image(forCompany company: Company, usingCache cacheUsability: CacheUsability<OverlayedCompanyImageCache> = .cache(OverlayedCompanyImageCache.shared), completion: @escaping ((ResponseReturn<(company: Company, image: UIImage)>) -> Void)) {
+    static func image(forCompany company: Company, usingCache cacheUsability: CacheUsability<OverlayedCompanyImageCache> = .cache(OverlayedCompanyImageCache.shared), completion: @escaping ((CachableResult<(company: Company, image: UIImage)>) -> Void)) {
         
         let cache = cacheUsability.cache
         if let cachedImage = cache?[company] {
-            completion(.value(company: company, image: cachedImage))
+            completion(.memory(company: company, image: cachedImage))
         } else {
             ImageManager.image(forURL: company.imageURL, completion: { response in
                 guard let imageInfo = response.value else {
@@ -60,13 +71,14 @@ class CompanyOverlayedImageHelper {
                 }
 
                 let overlayColor = company.color.withAlphaComponent(0.5)
-                guard let overlayedImage = imageInfo.image.image(withOverlayColor: overlayColor) else {
-                    completion(.value(company: company, image: imageInfo.image))
+                let dimOverlayColor = UIColor.black.withAlphaComponent(0.5)
+                guard let overlayedImage = imageInfo.image.image(withOverlayColor: dimOverlayColor)?.image(withOverlayColor: overlayColor) else {
+                    completion(.download(company: company, image: imageInfo.image))
                     return
                 }
                 
                 cache?[company] = overlayedImage
-                completion(.value(company: company, image: overlayedImage))
+                completion(.download(company: company, image: overlayedImage))
             })
         }
     }

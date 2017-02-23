@@ -13,6 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromosViewController" customModule="PromoHunt" customModuleProvider="target">
             <connections>
                 <outlet property="companyDetailsViewContainer" destination="GNT-nd-flB" id="RSh-FQ-KbU"/>
+                <outlet property="companyDetailsViewHeight" destination="fPZ-kf-U6w" id="nYe-kQ-VRm"/>
+                <outlet property="newCodeButton" destination="J7a-fV-etC" id="sAa-iO-8Ae"/>
+                <outlet property="tableView" destination="0Yt-0K-yoF" id="WOt-pZ-aPG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,15 +24,37 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="59J-1L-SGe">
+                    <rect key="frame" x="0.0" y="20" width="375" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="59J-1L-SGe" secondAttribute="height" multiplier="375:38" id="vUg-Pc-B12"/>
+                    </constraints>
+                </stackView>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNT-nd-flB">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="GNT-nd-flB" secondAttribute="height" multiplier="15:6" id="xDo-gf-iXW"/>
+                        <constraint firstAttribute="height" constant="150" id="fPZ-kf-U6w"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU8-EM-sdi">
-                    <rect key="frame" x="16" y="20" width="34" height="30"/>
-                    <state key="normal" title="Back"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7a-fV-etC">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="J7a-fV-etC" secondAttribute="height" multiplier="375:50" id="91T-54-aco"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Yt-0K-yoF">
+                    <rect key="frame" x="0.0" y="150" width="375" height="467"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU8-EM-sdi">
+                    <rect key="frame" x="7" y="27" width="24" height="24"/>
+                    <state key="normal" image="back-button"/>
                     <connections>
                         <action selector="didTapBackButton:" destination="-1" eventType="touchUpInside" id="rK7-dd-HR5"/>
                     </connections>
@@ -37,13 +62,26 @@
             </subviews>
             <color key="backgroundColor" red="0.0044639918870618134" green="0.62254209576919384" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="xU8-EM-sdi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="3Zp-gH-5EN"/>
-                <constraint firstItem="xU8-EM-sdi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="4p1-XA-cus"/>
+                <constraint firstItem="0Yt-0K-yoF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2LQ-2T-xPL"/>
+                <constraint firstAttribute="bottom" secondItem="J7a-fV-etC" secondAttribute="bottom" id="6Mv-I4-wWw"/>
                 <constraint firstAttribute="trailing" secondItem="GNT-nd-flB" secondAttribute="trailing" id="AwI-Ix-4Ee"/>
+                <constraint firstItem="59J-1L-SGe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="DwE-1X-6kG"/>
+                <constraint firstItem="J7a-fV-etC" firstAttribute="top" secondItem="0Yt-0K-yoF" secondAttribute="bottom" id="EJZ-jk-vE3"/>
+                <constraint firstItem="59J-1L-SGe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="J2h-z3-rmX"/>
+                <constraint firstItem="J7a-fV-etC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MFJ-kg-HvE"/>
+                <constraint firstAttribute="trailing" secondItem="J7a-fV-etC" secondAttribute="trailing" id="SW7-LA-Kdj"/>
+                <constraint firstAttribute="trailing" secondItem="0Yt-0K-yoF" secondAttribute="trailing" id="Xb2-sa-0iW"/>
+                <constraint firstItem="xU8-EM-sdi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="7" id="amd-Aq-GoX"/>
+                <constraint firstItem="0Yt-0K-yoF" firstAttribute="top" secondItem="GNT-nd-flB" secondAttribute="bottom" id="bfq-PV-Rtz"/>
+                <constraint firstAttribute="trailing" secondItem="59J-1L-SGe" secondAttribute="trailing" id="dhA-Na-glX"/>
+                <constraint firstItem="xU8-EM-sdi" firstAttribute="centerY" secondItem="59J-1L-SGe" secondAttribute="centerY" id="j2F-Cx-rRw"/>
                 <constraint firstItem="GNT-nd-flB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mqm-3Q-PhB"/>
                 <constraint firstItem="GNT-nd-flB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vBp-2J-jTj"/>
             </constraints>
-            <point key="canvasLocation" x="-405" y="-102"/>
+            <point key="canvasLocation" x="-599.5" y="-102.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="back-button" width="24" height="24"/>
+    </resources>
 </document>

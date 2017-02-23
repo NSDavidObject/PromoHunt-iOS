@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import Shimmer
-import SnapKit
-import CommonUtilities
 
 class CompanyLoadingCollectionViewCellSpec {
 
@@ -27,19 +24,6 @@ class CompanyLoadingCollectionViewCellSpec {
 
 class CompanyLoadingCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var shimmerView: FBShimmeringView!
-    @IBOutlet weak var shimmerContentView: View!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        shimmerView.isShimmering = true
-        shimmerView.shimmeringSpeed = 140
-        shimmerView.shimmeringOpacity = 0.2
-        shimmerView.backgroundColor = UIColor.clear
-        shimmerView.contentView = shimmerContentView
-        
-        shimmerContentView.proportionalCornerRadius = .circular
-        shimmerContentView.backgroundColor = UIColor.white.withAlphaComponent(0.1)
-    }
+    @IBOutlet weak var shimmerView: ShimmerView!
+    
 }

@@ -22,20 +22,22 @@
                         <constraint firstAttribute="width" secondItem="Jaq-9a-0Fb" secondAttribute="height" multiplier="1:1" id="asa-w5-nor"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uberEats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIn-lx-FCN">
-                    <rect key="frame" x="135.5" y="171.5" width="104.5" height="33.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uberEats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIn-lx-FCN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="28"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="QIn-lx-FCN" secondAttribute="bottom" id="7lY-16-Q3i"/>
                 <constraint firstAttribute="trailing" secondItem="Jaq-9a-0Fb" secondAttribute="trailing" id="Byj-RZ-50r"/>
-                <constraint firstItem="QIn-lx-FCN" firstAttribute="centerY" secondItem="Cgb-oQ-qG2" secondAttribute="centerY" id="EWd-OO-Cgf"/>
                 <constraint firstItem="Jaq-9a-0Fb" firstAttribute="leading" secondItem="Cgb-oQ-qG2" secondAttribute="leading" id="TOG-Gy-Kk3"/>
-                <constraint firstItem="QIn-lx-FCN" firstAttribute="centerX" secondItem="Cgb-oQ-qG2" secondAttribute="centerX" id="cIg-au-Ba3"/>
+                <constraint firstItem="QIn-lx-FCN" firstAttribute="top" secondItem="Cgb-oQ-qG2" secondAttribute="top" id="aPX-8b-QdG"/>
                 <constraint firstItem="Jaq-9a-0Fb" firstAttribute="centerX" secondItem="Cgb-oQ-qG2" secondAttribute="centerX" id="roG-YQ-ln0"/>
+                <constraint firstItem="QIn-lx-FCN" firstAttribute="leading" secondItem="Cgb-oQ-qG2" secondAttribute="leading" id="suR-RS-AaQ"/>
                 <constraint firstItem="Jaq-9a-0Fb" firstAttribute="centerY" secondItem="Cgb-oQ-qG2" secondAttribute="centerY" id="yuG-ZL-FAX"/>
+                <constraint firstAttribute="trailing" secondItem="QIn-lx-FCN" secondAttribute="trailing" id="zxy-oD-LQA"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -45,6 +47,7 @@
             <connections>
                 <outlet property="imageView" destination="Jaq-9a-0Fb" id="RkE-w9-iQB"/>
                 <outlet property="nameLabel" destination="QIn-lx-FCN" id="CuL-3n-f7H"/>
+                <outlet property="nameLabelVerticalOffset" destination="aPX-8b-QdG" id="E5d-At-3US"/>
             </connections>
         </view>
     </objects>

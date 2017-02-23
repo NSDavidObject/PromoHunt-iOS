@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="jr3-we-1hP" customClass="PromoLoadingTableViewCell" customModule="PromoHunt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jr3-we-1hP" id="hEA-3o-cbw">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUG-tc-Gj8" customClass="ShimmerView" customModule="PromoHunt" customModuleProvider="target">
+                        <rect key="frame" x="10" y="15" width="110" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hUG-tc-Gj8" secondAttribute="height" multiplier="11:3" id="4TD-Bu-sBi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hUG-tc-Gj8" firstAttribute="height" secondItem="hEA-3o-cbw" secondAttribute="height" multiplier="1:2" id="NFW-hi-0lc"/>
+                    <constraint firstItem="hUG-tc-Gj8" firstAttribute="leading" secondItem="hEA-3o-cbw" secondAttribute="leading" constant="10" id="cbj-ck-2gq"/>
+                    <constraint firstItem="hUG-tc-Gj8" firstAttribute="centerY" secondItem="hEA-3o-cbw" secondAttribute="centerY" id="xtb-Se-ICT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="shimmerView" destination="hUG-tc-Gj8" id="cE1-uh-jRl"/>
+            </connections>
+            <point key="canvasLocation" x="-229" y="-111"/>
+        </tableViewCell>
+    </objects>
+</document>

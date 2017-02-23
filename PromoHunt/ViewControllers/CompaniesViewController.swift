@@ -76,6 +76,7 @@ extension CompaniesViewController: UICollectionViewDelegate {
 //        let company = companies[indexPath.item]
         
         let promosViewController = PromosViewController.controllerFromNib()
+        promosViewController.company = companyCell.company
         
         if let navigationController = self.navigationController {
             zoomTransition = ZoomTransition(navigationController: navigationController)

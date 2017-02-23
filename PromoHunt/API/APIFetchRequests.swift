@@ -26,7 +26,7 @@ extension Request {
     }
 }
 
-enum ResponseReturn<T> {
+enum RequestResult<T> {
     case value(T)
     case error
 
@@ -47,11 +47,11 @@ protocol ConstructibleResponse {
 }
 
 extension ConstructibleResponse where Self: Request {
-    static func request(path: String = Self.path, parameters: JSONDictionary = [:], completion: @escaping ((ResponseReturn<ReturnType>) -> Void)) {
+    static func request(path: String = Self.path, parameters: JSONDictionary = [:], completion: @escaping ((RequestResult<ReturnType>) -> Void)) {
         jsonRequest(path: path, parameters: parameters) { response in
             DispatchQueue.global().async {
 
-                var result: ResponseReturn<ReturnType>
+                var result: RequestResult<ReturnType>
                 if let json = response.result.value, response.result.isSuccess {
                     do {
                         result = try .value(constructResponse(json: json as AnyObject))

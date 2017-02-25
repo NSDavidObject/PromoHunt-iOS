@@ -8,8 +8,9 @@
 
 import UIKit
 import CommonUtilities
+import DataDelegator
 
-class CompaniesViewController: UIViewController {
+class CompaniesViewController: UIViewController, ContentDataPresenter {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -17,46 +18,35 @@ class CompaniesViewController: UIViewController {
     var companies = [Company]() {
         didSet {
             collectionView.reloadData()
-            collectionView.isScrollEnabled = (companies.count > 0)
         }
     }
 
+    weak var delegationController: UIViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.isScrollEnabled = false
         collectionView.register(reusableCellWithClass: CompanyCollectionViewCell.self)
-        collectionView.register(reusableCellWithClass: CompanyLoadingCollectionViewCell.self)
-
-        fetchCompaniesArray()
     }
 
-    func fetchCompaniesArray() {
-        companies = []
-        CompaniesFetchRequest.request { response in
-            guard let companies = response.value else { return }
-            self.companies = companies
-        }
+    func setup(with result: Any?) {
+        guard let requestResult = result as? RequestResult<[Company]> else { fatalError() }
+        guard let companies = requestResult.value else { fatalError() }
+        
+        self.companies = companies
     }
 }
 
 extension CompaniesViewController: UICollectionViewDataSource {
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return companies.count > 0 ? companies.count : CompanyLoadingCollectionViewCellSpec.numberOfCells(in: collectionView)
+        return companies.count
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        precondition(companies.count == 0 || companies.count > indexPath.item)
-        
-        if companies.count == 0 {
-            return collectionView.dequeue(reusableCellWithClass: CompanyLoadingCollectionViewCell.self, for: indexPath, customization: {
-                $0.backgroundColor = CompanyLoadingCollectionViewCellSpec.backgroundColor(at: indexPath)
-            })
-        }
-        
+        precondition(companies.count > indexPath.item)
+
         let company = companies[indexPath.item]
         return collectionView.dequeue(reusableCellWithClass: CompanyCollectionViewCell.self, for: indexPath, customization: { cell in
             cell.company = company
@@ -71,17 +61,13 @@ extension CompaniesViewController: UICollectionViewDelegate {
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard companies.count > indexPath.item else { return }
         guard let companyCell = collectionView.cellForItem(at: indexPath) as? CompanyCollectionViewCell else { return }
-        guard let navigationController = navigationController else { return }
-        
-//        let company = companies[indexPath.item]
+        guard let navigationController = self.delegationController?.navigationController else { return }
         
         let promosViewController = PromosViewController.controllerFromNib()
         promosViewController.company = companyCell.company
         
-        if let navigationController = self.navigationController {
-            zoomTransition = ZoomTransition(navigationController: navigationController)
-            zoomTransition?.intialView = companyCell.companyDetailsView
-        }
+        zoomTransition = ZoomTransition(navigationController: navigationController)
+        zoomTransition?.intialView = companyCell.companyDetailsView
         
         navigationController.delegate = zoomTransition
         navigationController.pushViewController(promosViewController, animated: true)
@@ -106,4 +92,3 @@ extension CompaniesViewController: ZoomTransitionProtocol {
         
     }
 }
-

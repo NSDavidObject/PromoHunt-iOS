@@ -7,8 +7,9 @@ def shared_pods
 	pod 'Fabric'
 	pod 'Crashlytics'
 	pod 'Alamofire'
-    pod 'Shimmer'
+  pod 'Shimmer'
 	pod 'CommonUtilities', :path => "../../CommonUtilities/"
+	pod 'DataDelegator’, :path => "../../DataViewController/"
 	#pod 'CommonUtilities', :git => "https://github.com/davoda/CommonUtilities.git"
 end
 

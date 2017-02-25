@@ -3,6 +3,7 @@ PODS:
   - CommonUtilities (1.0.0)
   - Crashlytics (3.8.3):
     - Fabric (~> 1.6.3)
+  - DataDelegator (1.0.0)
   - Fabric (1.6.11)
   - Shimmer (1.0.2)
   - SnapKit (3.1.2)
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Alamofire
   - CommonUtilities (from `../../CommonUtilities/`)
   - Crashlytics
+  - DataDelegator (from `../../DataViewController/`)
   - Fabric
   - Shimmer
   - SnapKit
@@ -18,15 +20,18 @@ DEPENDENCIES:
 EXTERNAL SOURCES:
   CommonUtilities:
     :path: ../../CommonUtilities/
+  DataDelegator:
+    :path: ../../DataViewController/
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   CommonUtilities: 4c650e01957adcf97d47bd156d1082e6251509dd
   Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  DataDelegator: 3b685c1b2b1189ecd9434e9237742298f6cb8ff9
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
 
-PODFILE CHECKSUM: b836d98e828ec2157d637e643c22a288d3d14f59
+PODFILE CHECKSUM: 5d05a1096424b28115f9df2a7ad7e3689bb0e649
 
 COCOAPODS: 1.2.0

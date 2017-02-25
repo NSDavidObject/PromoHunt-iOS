@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-@objc public protocol ZoomTransitionProtocol {
+public protocol ZoomTransitionProtocol {
 	func viewForTransition() -> UIView
     func didCompleteTransition(fromView: UIView)
 }

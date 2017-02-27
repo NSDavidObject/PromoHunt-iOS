@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import DataDelegator
 
-class CompaniesLoadingViewController: UIViewController {
+class CompaniesLoadingViewController: UIViewController, Presenter {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
+
+    weak var delegationController: UIViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
 

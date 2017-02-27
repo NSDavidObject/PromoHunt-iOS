@@ -10,7 +10,7 @@ import UIKit
 import CommonUtilities
 import DataDelegator
 
-class CompaniesViewController: UIViewController, ContentDataPresenter {
+class CompaniesViewController: UIViewController, ContentPresenter {
 
     @IBOutlet weak var collectionView: UICollectionView!
     

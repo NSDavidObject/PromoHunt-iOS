@@ -10,8 +10,8 @@ import UIKit
 import CommonUtilities
 import DataDelegator
 
-extension UIViewController: DataPresenter {
-    
+extension UIViewController {
+
     public static func instance() -> Self {
         return controllerFromNib()
     }
@@ -20,7 +20,7 @@ extension UIViewController: DataPresenter {
     }
 }
 
-extension DataDelegatorViewController: ZoomTransitionProtocol {
+extension DelegationViewController: ZoomTransitionProtocol {
     
     public func viewForTransition() -> UIView {
         guard let conformingController = presentedPresenter as? ZoomTransitionProtocol else { fatalError() }

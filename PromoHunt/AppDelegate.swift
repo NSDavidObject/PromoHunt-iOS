@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
 
         navigationController.navigationBar.isHidden = true
-        navigationController.addChildViewController(DataDelegatorViewController(coordinator: CompaniesCoordinator()))
+        navigationController.addChildViewController(DelegationViewController(coordinator: CompaniesCoordinator()))
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController

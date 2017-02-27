@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromosViewController" customModule="PromoHunt" customModuleProvider="target">
             <connections>
+                <outlet property="backButon" destination="xU8-EM-sdi" id="GKb-9N-6tz"/>
                 <outlet property="companyDetailsViewContainer" destination="GNT-nd-flB" id="RSh-FQ-KbU"/>
                 <outlet property="companyDetailsViewHeight" destination="fPZ-kf-U6w" id="nYe-kQ-VRm"/>
                 <outlet property="newCodeButton" destination="J7a-fV-etC" id="sAa-iO-8Ae"/>

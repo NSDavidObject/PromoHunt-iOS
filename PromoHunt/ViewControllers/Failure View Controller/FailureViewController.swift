@@ -10,12 +10,13 @@ import UIKit
 import CommonUtilities
 import DataDelegator
 
-class FailureViewController: UIViewController, FailureDataPresenter {
+class FailureViewController: UIViewController, FailurePresenter {
 
     @IBOutlet weak var errorMessageLabel: UILabel!
     @IBOutlet weak var retryButton: UIButton!
 
-    weak var delegate: FailureDataPresenterDelegate?
+    weak var delegationController: UIViewController?
+    weak var delegate: DataDelegator.FailurePresenterDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         

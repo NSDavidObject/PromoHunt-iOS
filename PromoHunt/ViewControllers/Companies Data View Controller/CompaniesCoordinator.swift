@@ -9,12 +9,12 @@
 import Foundation
 import DataDelegator
 
-class CompaniesCoordinator: DataPresenterCoordinator {
+class CompaniesCoordinator: PresentionCoordinator {
     typealias ResultType = RequestResult<[Company]>
     
-    var contentControllerClass: ContentDataPresenter.Type = CompaniesViewController.self
-    var loadingControllerClass: DataPresenter.Type? = CompaniesLoadingViewController.self
-    var failureControllerClass: FailureDataPresenter.Type? = FailureViewController.self
+    var contentControllerClass: ContentPresenter.Type = CompaniesViewController.self
+    var loadingControllerClass: Presenter.Type? = CompaniesLoadingViewController.self
+    var failureControllerClass: FailurePresenter.Type? = FailureViewController.self
     
     func loadData(completion: @escaping ((ResultType) -> Void)) {
         CompaniesFetchRequest.request(completion: completion)

@@ -10,12 +10,14 @@ import UIKit
 import SnapKit
 
 class PromosViewController: UIViewController {
-    
+
+    static let backButtonFadeAnimationDuration: TimeInterval = 0.5
     static let companyDetailsViewMaxSizeRatio: CGFloat = 150.0/375.0
     static let companyDetailsViewMinSizeRatio: CGFloat = 58.0/375.0
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var backButon: UIButton!
     @IBOutlet weak var newCodeButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var companyDetailsViewContainer: UIView!
     @IBOutlet weak var companyDetailsViewHeight: NSLayoutConstraint!
     
@@ -33,6 +35,8 @@ class PromosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        backButon.alpha = 0
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -102,7 +106,11 @@ extension PromosViewController: ZoomTransitionProtocol {
     
     func didCompleteTransition(fromView: UIView) {
         guard let fromCompanyDetailsView = fromView as? CompanyDetailsView else { return }
+
         companyDetailsView.company = fromCompanyDetailsView.company
+        UIView.animate(withDuration: PromosViewController.backButtonFadeAnimationDuration) {
+            self.backButon.alpha = 1.0
+        }
     }
 }   
 

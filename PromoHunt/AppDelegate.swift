@@ -8,7 +8,7 @@
 
 import UIKit
 import CommonUtilities
-import DataDelegator
+import Cletrol
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

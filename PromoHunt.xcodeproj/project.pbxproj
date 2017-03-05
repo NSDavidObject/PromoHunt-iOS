@@ -18,6 +18,18 @@
 		0C89FCE61E4ED17300A0A604 /* CompanyLoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C89FCE41E4ED17300A0A604 /* CompanyLoadingCollectionViewCell.swift */; };
 		0C89FCE81E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C89FCE71E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib */; };
 		0C89FCE91E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C89FCE71E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib */; };
+		0CA3C43C1E6BDAD500FF9F7D /* CompaniesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3C4371E6BDAD500FF9F7D /* CompaniesCoordinator.swift */; };
+		0CA3C43D1E6BDAD500FF9F7D /* CompaniesLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3C4381E6BDAD500FF9F7D /* CompaniesLoadingViewController.swift */; };
+		0CA3C43E1E6BDAD500FF9F7D /* CompaniesLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3C4391E6BDAD500FF9F7D /* CompaniesLoadingViewController.xib */; };
+		0CA3C43F1E6BDAD500FF9F7D /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3C43A1E6BDAD500FF9F7D /* CompaniesViewController.swift */; };
+		0CA3C4401E6BDAD500FF9F7D /* CompaniesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3C43B1E6BDAD500FF9F7D /* CompaniesViewController.xib */; };
+		0CA3C4431E6BDAE700FF9F7D /* PromosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3C4411E6BDAE700FF9F7D /* PromosViewController.swift */; };
+		0CA3C4441E6BDAE700FF9F7D /* PromosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3C4421E6BDAE700FF9F7D /* PromosViewController.xib */; };
+		0CA3C4461E6BDAF900FF9F7D /* PromosCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3C4451E6BDAF900FF9F7D /* PromosCoordinator.swift */; };
+		0CA3C44A1E6BDC7E00FF9F7D /* CompanyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3C4481E6BDC7E00FF9F7D /* CompanyDetailsViewController.swift */; };
+		0CA3C44B1E6BDC7E00FF9F7D /* CompanyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3C4491E6BDC7E00FF9F7D /* CompanyDetailsViewController.xib */; };
+		0CA3C44E1E6BDD3B00FF9F7D /* PromosLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA3C44C1E6BDD3B00FF9F7D /* PromosLoadingViewController.swift */; };
+		0CA3C44F1E6BDD3B00FF9F7D /* PromosLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA3C44D1E6BDD3B00FF9F7D /* PromosLoadingViewController.xib */; };
 		0CB8865F1E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */; };
 		0CB886601E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */; };
 		0CB886621E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */; };
@@ -32,10 +44,6 @@
 		0CB886751E3F3D9300B94685 /* APIFetchRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886731E3F3D9300B94685 /* APIFetchRequests.swift */; };
 		0CB886771E3F3E5500B94685 /* APIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886761E3F3E5500B94685 /* APIHelpers.swift */; };
 		0CB886781E3F3E5500B94685 /* APIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB886761E3F3E5500B94685 /* APIHelpers.swift */; };
-		0CE77DE31E47A51100B3FC42 /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE77DE11E47A51100B3FC42 /* CompaniesViewController.swift */; };
-		0CE77DE41E47A51100B3FC42 /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE77DE11E47A51100B3FC42 /* CompaniesViewController.swift */; };
-		0CE77DE51E47A51100B3FC42 /* CompaniesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE77DE21E47A51100B3FC42 /* CompaniesViewController.xib */; };
-		0CE77DE61E47A51100B3FC42 /* CompaniesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CE77DE21E47A51100B3FC42 /* CompaniesViewController.xib */; };
 		550DA08E1E5151D40071B3B9 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA08D1E5151D40071B3B9 /* AppColors.swift */; };
 		550DA0901E5156800071B3B9 /* CompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA08F1E5156800071B3B9 /* CompanyCollectionViewCell.swift */; };
 		550DA0921E51568B0071B3B9 /* CompanyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550DA0911E51568B0071B3B9 /* CompanyCollectionViewCell.xib */; };
@@ -50,10 +58,6 @@
 		55AF3EC41E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF3EC31E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift */; };
 		55AF3EC61E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55AF3EC51E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib */; };
 		55AF3ECA1E5AC6410027D3EE /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AF3EC91E5AC6410027D3EE /* ShimmerView.swift */; };
-		55DB4BB51E52BEC6003146E4 /* PromosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */; };
-		55DB4BB61E52BEC6003146E4 /* PromosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */; };
-		55DB4BB71E52BEC6003146E4 /* PromosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */; };
-		55DB4BB81E52BEC6003146E4 /* PromosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */; };
 		55DB4BBA1E52C5AF003146E4 /* ZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB91E52C5AF003146E4 /* ZoomTransition.swift */; };
 		55DB4BBB1E52C5AF003146E4 /* ZoomTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BB91E52C5AF003146E4 /* ZoomTransition.swift */; };
 		55DB4BBD1E52CFF5003146E4 /* CompanyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB4BBC1E52CFF5003146E4 /* CompanyDetailsView.swift */; };
@@ -61,12 +65,8 @@
 		55DB4BC01E52D004003146E4 /* CompanyDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BBF1E52D004003146E4 /* CompanyDetailsView.xib */; };
 		55DB4BC11E52D004003146E4 /* CompanyDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55DB4BBF1E52D004003146E4 /* CompanyDetailsView.xib */; };
 		55DB4BC21E52D871003146E4 /* CompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DA08F1E5156800071B3B9 /* CompanyCollectionViewCell.swift */; };
-		55F97D371E615B9F00362E31 /* CompaniesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F97D361E615B9F00362E31 /* CompaniesCoordinator.swift */; };
-		55F97D381E615B9F00362E31 /* CompaniesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F97D361E615B9F00362E31 /* CompaniesCoordinator.swift */; };
-		55F97D3B1E615CE900362E31 /* PromoHunt+DataDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F97D3A1E615CE900362E31 /* PromoHunt+DataDelegator.swift */; };
-		55F97D3C1E615CE900362E31 /* PromoHunt+DataDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F97D3A1E615CE900362E31 /* PromoHunt+DataDelegator.swift */; };
-		55F97D3F1E615E4100362E31 /* CompaniesLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F97D3D1E615E4100362E31 /* CompaniesLoadingViewController.swift */; };
-		55F97D401E615E4100362E31 /* CompaniesLoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F97D3E1E615E4100362E31 /* CompaniesLoadingViewController.xib */; };
+		55F97D3B1E615CE900362E31 /* PromoHunt+Cletrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F97D3A1E615CE900362E31 /* PromoHunt+Cletrol.swift */; };
+		55F97D3C1E615CE900362E31 /* PromoHunt+Cletrol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F97D3A1E615CE900362E31 /* PromoHunt+Cletrol.swift */; };
 		55F97D471E615FCA00362E31 /* FailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F97D451E615FCA00362E31 /* FailureViewController.swift */; };
 		55F97D481E615FCA00362E31 /* FailureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F97D461E615FCA00362E31 /* FailureViewController.xib */; };
 		80FB70E8689B187047F595B9 /* Pods_PromoHunt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0394FD180E63AD4CA7DEB27 /* Pods_PromoHunt.framework */; };
@@ -105,6 +105,18 @@
 		0C86196A1E41A1110024F70E /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Promo.swift; path = Models/Promo.swift; sourceTree = "<group>"; };
 		0C89FCE41E4ED17300A0A604 /* CompanyLoadingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyLoadingCollectionViewCell.swift; path = Views/CompanyLoadingCollectionViewCell.swift; sourceTree = "<group>"; };
 		0C89FCE71E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompanyLoadingCollectionViewCell.xib; path = Views/CompanyLoadingCollectionViewCell.xib; sourceTree = "<group>"; };
+		0CA3C4371E6BDAD500FF9F7D /* CompaniesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompaniesCoordinator.swift; path = "ViewControllers/Companies View Controller/CompaniesCoordinator.swift"; sourceTree = "<group>"; };
+		0CA3C4381E6BDAD500FF9F7D /* CompaniesLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompaniesLoadingViewController.swift; path = "ViewControllers/Companies View Controller/CompaniesLoadingViewController.swift"; sourceTree = "<group>"; };
+		0CA3C4391E6BDAD500FF9F7D /* CompaniesLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompaniesLoadingViewController.xib; path = "ViewControllers/Companies View Controller/CompaniesLoadingViewController.xib"; sourceTree = "<group>"; };
+		0CA3C43A1E6BDAD500FF9F7D /* CompaniesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompaniesViewController.swift; path = "ViewControllers/Companies View Controller/CompaniesViewController.swift"; sourceTree = "<group>"; };
+		0CA3C43B1E6BDAD500FF9F7D /* CompaniesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompaniesViewController.xib; path = "ViewControllers/Companies View Controller/CompaniesViewController.xib"; sourceTree = "<group>"; };
+		0CA3C4411E6BDAE700FF9F7D /* PromosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromosViewController.swift; path = "ViewControllers/Promos View Controller/PromosViewController.swift"; sourceTree = "<group>"; };
+		0CA3C4421E6BDAE700FF9F7D /* PromosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PromosViewController.xib; path = "ViewControllers/Promos View Controller/PromosViewController.xib"; sourceTree = "<group>"; };
+		0CA3C4451E6BDAF900FF9F7D /* PromosCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromosCoordinator.swift; path = "ViewControllers/Promos View Controller/PromosCoordinator.swift"; sourceTree = "<group>"; };
+		0CA3C4481E6BDC7E00FF9F7D /* CompanyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyDetailsViewController.swift; path = "ViewControllers/Company Details/CompanyDetailsViewController.swift"; sourceTree = "<group>"; };
+		0CA3C4491E6BDC7E00FF9F7D /* CompanyDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompanyDetailsViewController.xib; path = "ViewControllers/Company Details/CompanyDetailsViewController.xib"; sourceTree = "<group>"; };
+		0CA3C44C1E6BDD3B00FF9F7D /* PromosLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromosLoadingViewController.swift; path = "ViewControllers/Promos View Controller/PromosLoadingViewController.swift"; sourceTree = "<group>"; };
+		0CA3C44D1E6BDD3B00FF9F7D /* PromosLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PromosLoadingViewController.xib; path = "ViewControllers/Promos View Controller/PromosLoadingViewController.xib"; sourceTree = "<group>"; };
 		0CB8865E1E3F0BEE00B94685 /* HTTPManager.swift .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HTTPManager.swift .swift"; path = "Networking/HTTPManager.swift .swift"; sourceTree = "<group>"; };
 		0CB886611E3F0CC700B94685 /* HTTPManager+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HTTPManager+Alamofire.swift"; path = "Networking/HTTPManager+Alamofire.swift"; sourceTree = "<group>"; };
 		0CB886661E3F0F9400B94685 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
@@ -112,8 +124,6 @@
 		0CB886701E3F386A00B94685 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Models/Company.swift; sourceTree = "<group>"; };
 		0CB886731E3F3D9300B94685 /* APIFetchRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIFetchRequests.swift; path = API/APIFetchRequests.swift; sourceTree = "<group>"; };
 		0CB886761E3F3E5500B94685 /* APIHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelpers.swift; path = API/APIHelpers.swift; sourceTree = "<group>"; };
-		0CE77DE11E47A51100B3FC42 /* CompaniesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompaniesViewController.swift; path = ViewControllers/CompaniesViewController.swift; sourceTree = "<group>"; };
-		0CE77DE21E47A51100B3FC42 /* CompaniesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompaniesViewController.xib; path = ViewControllers/CompaniesViewController.xib; sourceTree = "<group>"; };
 		318C2658CB69E2872AACEE91 /* Pods_PromoHuntTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromoHuntTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E943EF0C5C271C4F426DADD /* Pods-PromoHunt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHunt.release.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHunt/Pods-PromoHunt.release.xcconfig"; sourceTree = "<group>"; };
 		550DA08D1E5151D40071B3B9 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppColors.swift; path = Helpers/AppColors.swift; sourceTree = "<group>"; };
@@ -127,15 +137,10 @@
 		55AF3EC31E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromoLoadingTableViewCell.swift; path = Views/PromoLoadingTableViewCell.swift; sourceTree = "<group>"; };
 		55AF3EC51E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PromoLoadingTableViewCell.xib; path = Views/PromoLoadingTableViewCell.xib; sourceTree = "<group>"; };
 		55AF3EC91E5AC6410027D3EE /* ShimmerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShimmerView.swift; path = Views/ShimmerView.swift; sourceTree = "<group>"; };
-		55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PromosViewController.swift; path = ViewControllers/PromosViewController.swift; sourceTree = "<group>"; };
-		55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PromosViewController.xib; path = ViewControllers/PromosViewController.xib; sourceTree = "<group>"; };
 		55DB4BB91E52C5AF003146E4 /* ZoomTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ZoomTransition.swift; path = ../ZoomTransition.swift; sourceTree = "<group>"; };
 		55DB4BBC1E52CFF5003146E4 /* CompanyDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyDetailsView.swift; path = Views/CompanyDetailsView.swift; sourceTree = "<group>"; };
 		55DB4BBF1E52D004003146E4 /* CompanyDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompanyDetailsView.xib; path = Views/CompanyDetailsView.xib; sourceTree = "<group>"; };
-		55F97D361E615B9F00362E31 /* CompaniesCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompaniesCoordinator.swift; path = "ViewControllers/Companies Data View Controller/CompaniesCoordinator.swift"; sourceTree = "<group>"; };
-		55F97D3A1E615CE900362E31 /* PromoHunt+DataDelegator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PromoHunt+DataDelegator.swift"; path = "Extensions/PromoHunt+DataDelegator.swift"; sourceTree = "<group>"; };
-		55F97D3D1E615E4100362E31 /* CompaniesLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompaniesLoadingViewController.swift; path = ViewControllers/CompaniesLoadingViewController.swift; sourceTree = "<group>"; };
-		55F97D3E1E615E4100362E31 /* CompaniesLoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CompaniesLoadingViewController.xib; path = ViewControllers/CompaniesLoadingViewController.xib; sourceTree = "<group>"; };
+		55F97D3A1E615CE900362E31 /* PromoHunt+Cletrol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PromoHunt+Cletrol.swift"; path = "Extensions/PromoHunt+Cletrol.swift"; sourceTree = "<group>"; };
 		55F97D451E615FCA00362E31 /* FailureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FailureViewController.swift; path = "ViewControllers/Failure View Controller/FailureViewController.swift"; sourceTree = "<group>"; };
 		55F97D461E615FCA00362E31 /* FailureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FailureViewController.xib; path = "ViewControllers/Failure View Controller/FailureViewController.xib"; sourceTree = "<group>"; };
 		8D089B5901193D6E4A67257B /* Pods-PromoHuntTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromoHuntTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PromoHuntTests/Pods-PromoHuntTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +246,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		0CA3C4471E6BDC4900FF9F7D /* Company Details View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CA3C4481E6BDC7E00FF9F7D /* CompanyDetailsViewController.swift */,
+				0CA3C4491E6BDC7E00FF9F7D /* CompanyDetailsViewController.xib */,
+			);
+			name = "Company Details View Controller";
+			sourceTree = "<group>";
+		};
 		0CB8865D1E3F0BD500B94685 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +297,7 @@
 		0CE77DE71E47ABA100B3FC42 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CA3C4471E6BDC4900FF9F7D /* Company Details View Controller */,
 				55F97D421E615F9400362E31 /* Failure View Controller */,
 				55F97D411E615F8100362E31 /* Promos Data View Controller */,
 				55F97D351E615B6500362E31 /* Companies Data View Controller */,
@@ -341,11 +356,11 @@
 		55F97D351E615B6500362E31 /* Companies Data View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55F97D361E615B9F00362E31 /* CompaniesCoordinator.swift */,
-				0CE77DE11E47A51100B3FC42 /* CompaniesViewController.swift */,
-				0CE77DE21E47A51100B3FC42 /* CompaniesViewController.xib */,
-				55F97D3D1E615E4100362E31 /* CompaniesLoadingViewController.swift */,
-				55F97D3E1E615E4100362E31 /* CompaniesLoadingViewController.xib */,
+				0CA3C4371E6BDAD500FF9F7D /* CompaniesCoordinator.swift */,
+				0CA3C43A1E6BDAD500FF9F7D /* CompaniesViewController.swift */,
+				0CA3C43B1E6BDAD500FF9F7D /* CompaniesViewController.xib */,
+				0CA3C4381E6BDAD500FF9F7D /* CompaniesLoadingViewController.swift */,
+				0CA3C4391E6BDAD500FF9F7D /* CompaniesLoadingViewController.xib */,
 			);
 			name = "Companies Data View Controller";
 			sourceTree = "<group>";
@@ -353,7 +368,7 @@
 		55F97D391E615CCD00362E31 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				55F97D3A1E615CE900362E31 /* PromoHunt+DataDelegator.swift */,
+				55F97D3A1E615CE900362E31 /* PromoHunt+Cletrol.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -361,8 +376,11 @@
 		55F97D411E615F8100362E31 /* Promos Data View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				55DB4BB31E52BEC6003146E4 /* PromosViewController.swift */,
-				55DB4BB41E52BEC6003146E4 /* PromosViewController.xib */,
+				0CA3C4451E6BDAF900FF9F7D /* PromosCoordinator.swift */,
+				0CA3C4411E6BDAE700FF9F7D /* PromosViewController.swift */,
+				0CA3C4421E6BDAE700FF9F7D /* PromosViewController.xib */,
+				0CA3C44C1E6BDD3B00FF9F7D /* PromosLoadingViewController.swift */,
+				0CA3C44D1E6BDD3B00FF9F7D /* PromosLoadingViewController.xib */,
 			);
 			name = "Promos Data View Controller";
 			sourceTree = "<group>";
@@ -512,17 +530,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DB4BB71E52BEC6003146E4 /* PromosViewController.xib in Resources */,
+				0CA3C4441E6BDAE700FF9F7D /* PromosViewController.xib in Resources */,
 				55F97D481E615FCA00362E31 /* FailureViewController.xib in Resources */,
-				55F97D401E615E4100362E31 /* CompaniesLoadingViewController.xib in Resources */,
+				0CA3C44B1E6BDC7E00FF9F7D /* CompanyDetailsViewController.xib in Resources */,
 				55DB4BC01E52D004003146E4 /* CompanyDetailsView.xib in Resources */,
 				55AF3EC61E5AC1ED0027D3EE /* PromoLoadingTableViewCell.xib in Resources */,
 				550DA0921E51568B0071B3B9 /* CompanyCollectionViewCell.xib in Resources */,
 				0C4F4DE11E3F07E50075085E /* LaunchScreen.storyboard in Resources */,
 				0C89FCE81E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib in Resources */,
 				0C4F4DDE1E3F07E50075085E /* Assets.xcassets in Resources */,
-				0CE77DE51E47A51100B3FC42 /* CompaniesViewController.xib in Resources */,
 				55AF3EC01E5A5B290027D3EE /* PromoTableViewCell.xib in Resources */,
+				0CA3C4401E6BDAD500FF9F7D /* CompaniesViewController.xib in Resources */,
+				0CA3C43E1E6BDAD500FF9F7D /* CompaniesLoadingViewController.xib in Resources */,
+				0CA3C44F1E6BDD3B00FF9F7D /* PromosLoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,9 +550,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DB4BB81E52BEC6003146E4 /* PromosViewController.xib in Resources */,
 				550DA0931E5159BB0071B3B9 /* CompanyCollectionViewCell.xib in Resources */,
-				0CE77DE61E47A51100B3FC42 /* CompaniesViewController.xib in Resources */,
 				55DB4BC11E52D004003146E4 /* CompanyDetailsView.xib in Resources */,
 				0C89FCE91E4ED19C00A0A604 /* CompanyLoadingCollectionViewCell.xib in Resources */,
 			);
@@ -652,24 +670,27 @@
 				55AF3EBE1E5A5B190027D3EE /* PromoTableViewCell.swift in Sources */,
 				55AF3EC41E5AC1DC0027D3EE /* PromoLoadingTableViewCell.swift in Sources */,
 				550DA09B1E516CD50071B3B9 /* ImageCache.swift in Sources */,
+				0CA3C43F1E6BDAD500FF9F7D /* CompaniesViewController.swift in Sources */,
 				550DA0961E515F2E0071B3B9 /* ImageDownloader.swift in Sources */,
+				0CA3C44A1E6BDC7E00FF9F7D /* CompanyDetailsViewController.swift in Sources */,
 				0CB8866A1E3F0FAE00B94685 /* Secrets.swift in Sources */,
-				55F97D3B1E615CE900362E31 /* PromoHunt+DataDelegator.swift in Sources */,
+				55F97D3B1E615CE900362E31 /* PromoHunt+Cletrol.swift in Sources */,
+				0CA3C4461E6BDAF900FF9F7D /* PromosCoordinator.swift in Sources */,
+				0CA3C43D1E6BDAD500FF9F7D /* CompaniesLoadingViewController.swift in Sources */,
 				55DB4BBA1E52C5AF003146E4 /* ZoomTransition.swift in Sources */,
 				0CB886741E3F3D9300B94685 /* APIFetchRequests.swift in Sources */,
-				55DB4BB51E52BEC6003146E4 /* PromosViewController.swift in Sources */,
 				0CB8865F1E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */,
 				550DA0991E5166E30071B3B9 /* ImageManager.swift in Sources */,
 				0C4F4DD71E3F07E50075085E /* AppDelegate.swift in Sources */,
 				0C86196B1E41A1110024F70E /* Promo.swift in Sources */,
+				0CA3C43C1E6BDAD500FF9F7D /* CompaniesCoordinator.swift in Sources */,
 				0CB886671E3F0F9400B94685 /* API.swift in Sources */,
 				55AF3ECA1E5AC6410027D3EE /* ShimmerView.swift in Sources */,
-				0CE77DE31E47A51100B3FC42 /* CompaniesViewController.swift in Sources */,
-				55F97D3F1E615E4100362E31 /* CompaniesLoadingViewController.swift in Sources */,
+				0CA3C44E1E6BDD3B00FF9F7D /* PromosLoadingViewController.swift in Sources */,
 				550DA0901E5156800071B3B9 /* CompanyCollectionViewCell.swift in Sources */,
+				0CA3C4431E6BDAE700FF9F7D /* PromosViewController.swift in Sources */,
 				550DA08E1E5151D40071B3B9 /* AppColors.swift in Sources */,
 				0CB886711E3F386A00B94685 /* Company.swift in Sources */,
-				55F97D371E615B9F00362E31 /* CompaniesCoordinator.swift in Sources */,
 				0C89FCE51E4ED17300A0A604 /* CompanyLoadingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,21 +699,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55F97D381E615B9F00362E31 /* CompaniesCoordinator.swift in Sources */,
 				0C4F4DEC1E3F07E50075085E /* PromoHuntTests.swift in Sources */,
 				550DA09C1E516CD50071B3B9 /* ImageCache.swift in Sources */,
 				0CB886751E3F3D9300B94685 /* APIFetchRequests.swift in Sources */,
 				0CB8866B1E3F0FAE00B94685 /* Secrets.swift in Sources */,
 				0C86196C1E41A1110024F70E /* Promo.swift in Sources */,
-				0CE77DE41E47A51100B3FC42 /* CompaniesViewController.swift in Sources */,
 				0CB886631E3F0CC700B94685 /* HTTPManager+Alamofire.swift in Sources */,
 				0CB886781E3F3E5500B94685 /* APIHelpers.swift in Sources */,
 				55DB4BBB1E52C5AF003146E4 /* ZoomTransition.swift in Sources */,
 				0CB886721E3F386A00B94685 /* Company.swift in Sources */,
 				0CB886681E3F0F9400B94685 /* API.swift in Sources */,
-				55F97D3C1E615CE900362E31 /* PromoHunt+DataDelegator.swift in Sources */,
+				55F97D3C1E615CE900362E31 /* PromoHunt+Cletrol.swift in Sources */,
 				55DB4BBE1E52CFF5003146E4 /* CompanyDetailsView.swift in Sources */,
-				55DB4BB61E52BEC6003146E4 /* PromosViewController.swift in Sources */,
 				0CB886601E3F0BEE00B94685 /* HTTPManager.swift .swift in Sources */,
 				55DB4BC21E52D871003146E4 /* CompanyCollectionViewCell.swift in Sources */,
 				550DA0971E515F300071B3B9 /* ImageDownloader.swift in Sources */,

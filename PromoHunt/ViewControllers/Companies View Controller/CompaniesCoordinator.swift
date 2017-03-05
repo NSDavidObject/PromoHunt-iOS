@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import DataDelegator
+import Cletrol
 
-class CompaniesCoordinator: PresentionCoordinator {
+class CompaniesCoordinator: PresentationCoordinator {
     typealias ResultType = RequestResult<[Company]>
     
     var contentControllerClass: ContentPresenter.Type = CompaniesViewController.self

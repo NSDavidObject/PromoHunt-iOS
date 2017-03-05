@@ -8,7 +8,7 @@
 
 import UIKit
 import CommonUtilities
-import DataDelegator
+import Cletrol
 
 class CompaniesViewController: UIViewController, ContentPresenter {
 
@@ -62,15 +62,15 @@ extension CompaniesViewController: UICollectionViewDelegate {
         guard companies.count > indexPath.item else { return }
         guard let companyCell = collectionView.cellForItem(at: indexPath) as? CompanyCollectionViewCell else { return }
         guard let navigationController = self.delegationController?.navigationController else { return }
-        
-        let promosViewController = PromosViewController.controllerFromNib()
-        promosViewController.company = companyCell.company
-        
+        guard let company = companyCell.company else { return }
+
         zoomTransition = ZoomTransition(navigationController: navigationController)
         zoomTransition?.intialView = companyCell.companyDetailsView
         
         navigationController.delegate = zoomTransition
-        navigationController.pushViewController(promosViewController, animated: true)
+
+        let companyDetailsViewController = CompanyDetailsViewController(company: company)
+        navigationController.pushViewController(companyDetailsViewController, animated: true)
     }
 }
 

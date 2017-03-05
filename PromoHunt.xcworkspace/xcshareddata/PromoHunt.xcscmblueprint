@@ -5,12 +5,14 @@
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "9716B34F8FCB2955B4AF86AF3C257092C63B4A35" : 9223372036854775807,
-    "1D81F0747AA5EF9C4D00B640A18B144A38A47595" : 9223372036854775807
+    "1D81F0747AA5EF9C4D00B640A18B144A38A47595" : 9223372036854775807,
+    "A62224CE5857433D3BC56E1293355DD7FC6B3061" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E8E847F3-ACCD-4080-9BBC-32975103B28F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "9716B34F8FCB2955B4AF86AF3C257092C63B4A35" : "..\/CommonUtilities",
-    "1D81F0747AA5EF9C4D00B640A18B144A38A47595" : "iOS\/"
+    "1D81F0747AA5EF9C4D00B640A18B144A38A47595" : "iOS\/",
+    "A62224CE5857433D3BC56E1293355DD7FC6B3061" : "..\/DataViewController"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "PromoHunt",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -25,6 +27,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/davoda\/CommonUtilities.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9716B34F8FCB2955B4AF86AF3C257092C63B4A35"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NSDavidObject\/Cletrol.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A62224CE5857433D3BC56E1293355DD7FC6B3061"
     }
   ]
 }

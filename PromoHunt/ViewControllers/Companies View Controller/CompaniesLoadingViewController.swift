@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import DataDelegator
+import Cletrol
 
 class CompaniesLoadingViewController: UIViewController, Presenter {
 

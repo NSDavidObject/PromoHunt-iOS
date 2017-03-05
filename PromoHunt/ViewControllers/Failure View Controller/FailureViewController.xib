@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,28 +24,54 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FV6-LJ-WoD">
-                    <rect key="frame" x="145.5" y="306.5" width="83.5" height="54.5"/>
+                    <rect key="frame" x="47" y="303.5" width="282" height="60"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSO-NQ-Qva">
-                            <rect key="frame" x="0.0" y="0.0" width="83.5" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSO-NQ-Qva">
+                            <rect key="frame" x="0.0" y="0.0" width="282" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg2-NO-Yai">
-                            <rect key="frame" x="0.0" y="20.5" width="83.5" height="34"/>
-                            <state key="normal" title="Button">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="didTapRetryButton:" destination="-1" eventType="touchUpInside" id="2gJ-zd-pcT"/>
-                            </connections>
-                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ocY-h0-VmI">
+                            <rect key="frame" x="0.0" y="20.5" width="282" height="9.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="ocY-h0-VmI" secondAttribute="height" multiplier="300:10" id="rUN-Mj-ExB"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Mp-jl-odn">
+                            <rect key="frame" x="0.0" y="30" width="282" height="30"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDl-bu-poD">
+                                    <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg2-NO-Yai">
+                                    <rect key="frame" x="86" y="0.0" width="110.5" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="1fH-Ar-z89"/>
+                                        <constraint firstAttribute="width" secondItem="Yg2-NO-Yai" secondAttribute="height" multiplier="110:30" id="s7y-D7-glP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapRetryButton:" destination="-1" eventType="touchUpInside" id="2gJ-zd-pcT"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTd-Vs-zdr">
+                                    <rect key="frame" x="196.5" y="0.0" width="85.5" height="30"/>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="eDl-bu-poD" firstAttribute="width" secondItem="QTd-Vs-zdr" secondAttribute="width" id="ev1-ga-j0T"/>
+                            </constraints>
+                        </stackView>
                     </subviews>
                 </stackView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="FV6-LJ-WoD" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="75:100" id="1Ym-ba-Mpj"/>
                 <constraint firstItem="FV6-LJ-WoD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VCK-qv-1N5"/>
                 <constraint firstItem="FV6-LJ-WoD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="izD-fh-VMc"/>
             </constraints>

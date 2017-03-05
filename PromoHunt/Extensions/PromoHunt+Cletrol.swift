@@ -1,5 +1,5 @@
 //
-//  PromoHunt+DataDelegator.swift
+//  PromoHunt+Cletrol.swift
 //  PromoHunt
 //
 //  Created by David Elsonbaty on 2/24/17.
@@ -8,11 +8,11 @@
 
 import UIKit
 import CommonUtilities
-import DataDelegator
+import Cletrol
 
 extension UIViewController {
 
-    public static func instance() -> Self {
+    public class func instance(by coordinator: AnyObject) -> Self {
         return controllerFromNib()
     }
     public var presentedView: UIView! {

@@ -9,7 +9,7 @@ def shared_pods
 	pod 'Alamofire'
     pod 'Shimmer'
 	pod 'CommonUtilities', :path => "../../CommonUtilities/"
-	pod 'Cletrol', :path => "../../DataViewController/"
+	pod 'Cletrol', :path => "../../Cletrol/"
 	#pod 'Cletrol', :git => "https://github.com/NSDavidObject/Cletrol.git"
 	#pod 'CommonUtilities', :git => "https://github.com/davoda/CommonUtilities.git"
 end

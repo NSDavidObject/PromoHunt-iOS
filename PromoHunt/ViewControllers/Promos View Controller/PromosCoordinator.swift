@@ -15,6 +15,7 @@ class PromosCoordinator: PresentationCoordinator {
     var contentControllerClass: ContentPresenter.Type = PromosViewController.self
     var loadingControllerClass: Presenter.Type? = PromosLoadingViewController.self
     var failureControllerClass: FailurePresenter.Type? = FailureViewController.self
+    lazy var transitionAnimator: DelegationViewControllerTransitionAnimator = DelegationViewControllerTransitionAnimator()
 
     let company: Company
     var promosViewControllerDelegate: PromosViewControllerDelegate?

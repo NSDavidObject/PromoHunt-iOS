@@ -15,6 +15,7 @@ class CompaniesCoordinator: PresentationCoordinator {
     var contentControllerClass: ContentPresenter.Type = CompaniesViewController.self
     var loadingControllerClass: Presenter.Type? = CompaniesLoadingViewController.self
     var failureControllerClass: FailurePresenter.Type? = FailureViewController.self
+    lazy var transitionAnimator: DelegationViewControllerTransitionAnimator = DelegationViewControllerTransitionAnimator()
     
     func loadData(completion: @escaping ((ResultType) -> Void)) {
         CompaniesFetchRequest.request(completion: completion)

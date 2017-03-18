@@ -11,7 +11,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - Cletrol (from `../../DataViewController/`)
+  - Cletrol (from `../../Cletrol/`)
   - CommonUtilities (from `../../CommonUtilities/`)
   - Crashlytics
   - Fabric
@@ -20,19 +20,19 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   Cletrol:
-    :path: "../../DataViewController/"
+    :path: "../../Cletrol/"
   CommonUtilities:
     :path: "../../CommonUtilities/"
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  Cletrol: a1a930671bd733ebcaf9de43581ffc77911786ed
+  Cletrol: 4ab73aaae1208a2f5e36af45e1decd930501c886
   CommonUtilities: 59c17c1ba5a4ee8ae7d7aa7101ca0829eb74d288
   Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
 
-PODFILE CHECKSUM: f1fcdece71fd30e1de242f67b38c994be550eb5d
+PODFILE CHECKSUM: 8cd00fb4931f1dfdb8540e95e5283b2ea1fe85f4
 
 COCOAPODS: 1.2.0
